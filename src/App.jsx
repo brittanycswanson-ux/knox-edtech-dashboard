@@ -7,6 +7,7 @@ import CountyMap from './components/CountyMap.jsx';
 import CountyTable from './components/CountyTable.jsx';
 import GradeBandSentiment from './components/GradeBandSentiment.jsx';
 import ConcernBreakdown from './components/ConcernBreakdown.jsx';
+import GradeBandConcerns from './components/GradeBandConcerns.jsx';
 import PolicyBreakdown from './components/PolicyBreakdown.jsx';
 import ParentVoices from './components/ParentVoices.jsx';
 import SchoolTypeComparison from './components/SchoolTypeComparison.jsx';
@@ -163,6 +164,18 @@ export default function App() {
                 concernsBreakdown={active.concernsBreakdown}
                 totalResponses={active.totalResponses}
               />
+              {active.concernsByGradeBand && (
+                <>
+                  <h3 className="subsection-title">Concerns by Grade Band</h3>
+                  <p className="section-desc">How concerns differ based on the grade level of children</p>
+                  <GradeBandConcerns
+                    concernsByGradeBand={active.concernsByGradeBand}
+                    concernsBreakdown={active.concernsBreakdown}
+                    concernsTopLine={active.concernsTopLine}
+                    totalResponses={active.totalResponses}
+                  />
+                </>
+              )}
             </section>
 
             <section className="section">

@@ -119,6 +119,12 @@ function emptyBucket() {
     anyTooMuch: 0,
     concernsTopLine: { Yes: 0, No: 0 },
     concernsBreakdown: {},
+    concernsByGradeBand: {
+      'K-2': { topLine: { Yes: 0, No: 0 }, breakdown: {} },
+      '3-5': { topLine: { Yes: 0, No: 0 }, breakdown: {} },
+      '6-8': { topLine: { Yes: 0, No: 0 }, breakdown: {} },
+      '9-12': { topLine: { Yes: 0, No: 0 }, breakdown: {} },
+    },
     policies: {},
   };
 }
@@ -157,14 +163,31 @@ function aggregateRow(bucket, row, getCell) {
   }
 
   const hasConcerns = getCell(row, 'hasConcerns');
+  const concernList = hasConcerns === 'Yes'
+    ? parseKnownOptions(getCell(row, 'concerns'), fieldMap.concernOptions)
+    : [];
+
   if (hasConcerns === 'Yes') {
     bucket.concernsTopLine.Yes++;
-    const concernList = parseKnownOptions(getCell(row, 'concerns'), fieldMap.concernOptions);
     for (const concern of concernList) {
       if (concern !== 'Other') increment(bucket.concernsBreakdown, concern);
     }
   } else if (hasConcerns === 'No') {
     bucket.concernsTopLine.No++;
+  }
+
+  // Attribute concerns to each grade band the respondent has children in
+  for (const { field, band } of BAND_FIELDS) {
+    const val = getCell(row, field);
+    if (!val) continue; // respondent has no child in this band
+    if (hasConcerns === 'Yes') {
+      bucket.concernsByGradeBand[band].topLine.Yes++;
+      for (const concern of concernList) {
+        if (concern !== 'Other') increment(bucket.concernsByGradeBand[band].breakdown, concern);
+      }
+    } else if (hasConcerns === 'No') {
+      bucket.concernsByGradeBand[band].topLine.No++;
+    }
   }
 
   const policyList = parseKnownOptions(getCell(row, 'policies'), fieldMap.policyOptions);
@@ -183,6 +206,11 @@ function sortBucket(b) {
     commsRating: b.commsRating,
     concernsTopLine: b.concernsTopLine,
     concernsBreakdown: sortDesc(b.concernsBreakdown),
+    concernsByGradeBand: Object.fromEntries(
+      Object.entries(b.concernsByGradeBand).map(([band, data]) => [
+        band, { topLine: data.topLine, breakdown: sortDesc(data.breakdown) },
+      ])
+    ),
     policies: sortDesc(b.policies),
   };
 }
@@ -321,6 +349,7 @@ function writeOutput(data) {
     commsRating: data.commsRating || {},
     concernsTopLine: data.concernsTopLine || {},
     concernsBreakdown: data.concernsBreakdown || {},
+    concernsByGradeBand: data.concernsByGradeBand || {},
     policies: data.policies || {},
     districts: data.districts || [],
     byDistrict: data.byDistrict || {},
