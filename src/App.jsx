@@ -170,9 +170,6 @@ export default function App() {
                   <p className="section-desc">How concerns differ based on the grade level of children</p>
                   <GradeBandConcerns
                     concernsByGradeBand={active.concernsByGradeBand}
-                    concernsBreakdown={active.concernsBreakdown}
-                    concernsTopLine={active.concernsTopLine}
-                    totalResponses={active.totalResponses}
                   />
                 </div>
               )}
