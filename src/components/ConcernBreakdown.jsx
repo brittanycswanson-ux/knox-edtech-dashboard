@@ -46,11 +46,11 @@ export default function ConcernBreakdown({ concernsTopLine, concernsBreakdown, t
               label={label}
               count={count}
               maxCount={maxCount}
-              pct={totalResponses > 0 ? (count / totalResponses) * 100 : 0}
+              pct={(concernsTopLine.Yes || 0) > 0 ? (count / concernsTopLine.Yes) * 100 : 0}
             />
           ))}
           <p className="hbar-note">
-            % of total survey respondents. Respondents could select multiple concerns.
+            % of parents who reported concerns ({concernsTopLine.Yes || 0}). Respondents could select multiple.
           </p>
         </div>
       ) : (
