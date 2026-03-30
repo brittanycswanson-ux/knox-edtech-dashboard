@@ -283,19 +283,29 @@ async function main() {
 
   quotePool.sort((a, b) => b.score - a.score);
 
-  // Hand-curated statewide featured quotes — ordered by county population (largest first),
-  // one per county, selected for broad relatability and impact.
+  // Hand-curated statewide featured quotes — 20 voices, one per county,
+  // selected for broad relatability and impact with maximum geographic diversity.
   const featuredQuotes = [
     { text: "My biggest concern is school devices undermining screen time policies at home. My 5th grader exclusively has homework on her Chromebook; it's difficult to police where homework ends and YouTube time begins.", county: 'Philadelphia' },
     { text: "My daughter spends way too much time on screens at school. Much of her curriculum is screen based. She\u2019s exhausted and unregulated when she gets home.", county: 'Allegheny' },
-    { text: "My daughter was able to access an inappropriate website with a chat feature. When I alerted the school they fixed it and said their protection software had expired and they forgot to renew it\u2026", county: 'Montgomery' },
+    { text: "I\u2019m very concerned about the lack of evidence of growth using ed tech vs \u201cold school methods\u201d. The data suggests their is no growth using the ed tech and could argue it is creating a disconnect between student and teacher/classroom. The more we rely on AI and Ed Tech, the more detrimental to the development of our children.", county: 'Montgomery' },
     { text: "Despite district filters and automated device usage reports sent to me, my 8th grader spends a huge amount of time playing games, watching YouTube shorts, and checking professional sports statistics while at school. When he comes home, I spend time sitting with him helping him stay on track while he gets his online school work completed.", county: 'Bucks' },
     { text: "My daughter says teachers don\u2019t teach, they just say \u201cgo to [insert app] on ipad, watch the video and answer the questions.\u201d She says as a result of this, teachers don\u2019t know how to teach the material they\u2019ve been tasked with teaching when kids have a question.", county: 'Delaware' },
+    { text: "I would like screens banned in elementary school ideally but at minimum a return to shared bank that they visit on a rotation. I think it\u2019s terrible that my kids use screens more than they have gym in a week.", county: 'Chester' },
     { text: "Our school district allows YouTube, which is not something our children have access to at home. Our district also uses Aristotle, however it works haphazardly. This past fall, my 12 year old came across and Ai chat site through his school issued Chromebook.", county: 'Lancaster' },
     { text: "My 6 year old son in kindergarten told me today that \u201cmost of his friends watch YouTube on the school iPad\u201d \n6\u2026 years\u2026 old\u2026 in kindergarten.", county: 'Westmoreland' },
     { text: "We were not given an option of wanting a device. We are also responsible for any damages that may occur to said device throughout the year. Students also bring device home throughout the summer further undermining our strict no device policy at home.", county: 'Luzerne' },
     { text: "I genuinely have no idea how much time my daughter is in her iPad every day. The school doesn\u2019t communicate it well. We used to do screens on a regular basis at home but we have stopped because of how much ambiguity there is with her school usage.", county: 'Cumberland' },
     { text: "My son\u2019s teacher told us that there is no way for the school to block everything inappropriate. As parents, I feel as if the school is undoing a lot of our hard work when it comes to limiting screen time and ensuring we know what they are accessing.", county: 'Lackawanna' },
+    { text: "As a parent, I am not allowed to put any monitoring software on the school device. This makes me extremely uncomfortable as my children are allowed to utilize youtube and other websites where harmful content can easily be found.", county: 'Beaver' },
+    { text: "The older the grade the more they\u2019re seen on their devices.\n\nI also believe that Keyboarding should be more of a priority in the elementary grades. If students are exposed/required to become so dependent on using the technology, why are they be supported in how to use it appropriately and develop a lifelong skill.", county: 'Lycoming' },
+    { text: "Kids are receiving devices without learning how to properly use them. We assume in today\u2019s world that they know how to type or that they know how to do things on an ipad. Sure the learn through trial and error but we know that time on these devices activates a part of the brain similar to drug use! It\u2019s not healthy.", county: 'Lehigh' },
+    { text: "I do not think that kindergarteners should have computers or personal screen time AT ALL. Starting later (even third or fourth grade) would be better. I have looked at the \u201ceducational\u201d programs my children use at school, and most, especially the reading apps, have no educational value at all in my opinion.", county: 'Centre' },
+    { text: "Thank you very much for all of your work. I am a mother and as a Doctor of Physical Therapy with advanced training in pediatrics and 8 years of experience reading the science on the effects of the radiation used by cell phones and other wireless devices, I have a special appreciation for what you are doing.", county: 'Berks' },
+    { text: "I\u2019m concerned about auto-correct on Google correcting all of my son\u2019s work before he submits it. Most of his assignments and projects are done on Google Slides. He is in high school and spends a lot of time at school using his Chromebook to watch Youtube and read the news.", county: 'Northampton' },
+    { text: "Data privacy is my only concern. Use of third-party services are so tempting for schools that do not have the budgets or skills to build the technology they want to use or teach in-house.", county: 'Erie' },
+    { text: "Children are not taught how to read/write/type before being given chromebooks to use for school assignments. Kindergarteners should not have Chromebooks at all!", county: 'Monroe' },
+    { text: "Some grade levels are allowed to have their screens at lunch, which is of major concern to me.", county: 'Lebanon' },
   ];
   console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} hand-curated featured quotes`);
 

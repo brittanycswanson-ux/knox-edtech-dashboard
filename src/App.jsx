@@ -165,7 +165,7 @@ export default function App() {
                 totalResponses={active.totalResponses}
               />
               {active.concernsByGradeBand && (
-                <>
+                <div className="subsection-card">
                   <h3 className="subsection-title">Concerns by Grade Band</h3>
                   <p className="section-desc">How concerns differ based on the grade level of children</p>
                   <GradeBandConcerns
@@ -174,7 +174,7 @@ export default function App() {
                     concernsTopLine={active.concernsTopLine}
                     totalResponses={active.totalResponses}
                   />
-                </>
+                </div>
               )}
             </section>
 

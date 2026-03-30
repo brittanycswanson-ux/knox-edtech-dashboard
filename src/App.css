@@ -144,6 +144,20 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.35rem;
 }
+.subsection-card {
+  background: var(--warm);
+  border: 1px solid var(--sand);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.subsection-card .subsection-title {
+  margin-top: 0;
+}
+.subsection-card .section-desc {
+  margin-bottom: 1rem;
+}
 
 /* ── District filter ─────────────────────────────────────── */
 .filter-bar {
