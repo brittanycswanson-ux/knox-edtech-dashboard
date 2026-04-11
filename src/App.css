@@ -719,7 +719,8 @@ body {
   .pdf-button,
   .header-cta,
   .county-map-wrap,
-  .band-comparison-hint {
+  .band-comparison-hint,
+  .school-type-section {
     display: none !important;
   }
 
