@@ -77,6 +77,29 @@ export default function App() {
               onChange={setSelectedDistrict}
             />
 
+            {selectedDistrict && (
+              <div className="print-header">
+                <img src="/logo.png" alt="PA Unplugged" className="print-logo" />
+                <div>
+                  <h1 className="print-title">EdTech Survey Results</h1>
+                  <p className="print-district">{selectedDistrict}</p>
+                  <p className="print-meta">
+                    {active.totalResponses} response{active.totalResponses !== 1 ? 's' : ''} · dashboard.paunplugged.org · {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {selectedDistrict && (
+              <button
+                className="pdf-button"
+                onClick={() => window.print()}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF
+              </button>
+            )}
+
             <section className="section hero-section">
               {selectedDistrict && (
                 <p className="district-context">
