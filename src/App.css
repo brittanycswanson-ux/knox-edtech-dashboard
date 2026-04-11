@@ -761,11 +761,15 @@ body {
 
   .section {
     margin-bottom: 1.5rem;
-    break-inside: avoid;
+  }
+
+  .hero-section {
+    break-inside: auto;
   }
 
   .section-title {
     font-size: 13pt;
+    break-after: avoid;
   }
 
   .hero-stats {
@@ -773,9 +777,26 @@ body {
   }
   .hero-stat {
     padding: 0.75rem 1rem;
+    break-inside: avoid;
   }
   .hero-stat-pct {
     font-size: 2rem;
+  }
+
+  .hero-top-concerns {
+    break-inside: avoid;
+  }
+
+  .hbar-row {
+    break-inside: avoid;
+  }
+
+  .topline-stat {
+    break-inside: avoid;
+  }
+
+  .school-type-card {
+    break-inside: avoid;
   }
 
   .quotes-grid {
@@ -789,10 +810,6 @@ body {
   .county-table-wrap {
     max-height: none;
     overflow: visible;
-  }
-
-  .school-type-grid {
-    break-inside: avoid;
   }
 
   .sentiment-bar {
