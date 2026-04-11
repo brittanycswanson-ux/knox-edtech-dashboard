@@ -760,7 +760,7 @@ body {
   }
 
   .section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-section {
@@ -768,31 +768,61 @@ body {
   }
 
   .section-title {
-    font-size: 13pt;
+    font-size: 12pt;
     break-after: avoid;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .section-desc {
+    font-size: 8pt;
+    margin-bottom: 0.5rem;
   }
 
   .hero-stats {
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
   .hero-stat {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     break-inside: avoid;
   }
   .hero-stat-pct {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .hero-stat-label {
+    font-size: 0.8rem;
+  }
+  .hero-footnote {
+    font-size: 7pt;
+    margin-top: 0.2rem;
+  }
+  .district-context {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .hero-top-concerns {
     break-inside: avoid;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero-concerns-list li {
+    font-size: 0.8rem;
+    gap: 0.5rem;
   }
 
   .hbar-row {
     break-inside: avoid;
+    margin-bottom: 0.3rem;
+  }
+  .hbar-label {
+    font-size: 0.78rem;
   }
 
   .topline-stat {
     break-inside: avoid;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
   }
 
   .school-type-card {
@@ -800,11 +830,15 @@ body {
   }
 
   .quotes-grid {
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
   .quote-card {
-    padding: 0.6rem 0.8rem;
+    padding: 0.5rem 0.7rem;
     break-inside: avoid;
+  }
+  .quote-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
   }
 
   .county-table-wrap {
@@ -813,7 +847,21 @@ body {
   }
 
   .sentiment-bar {
-    height: 28px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+  }
+  .sentiment-legend {
+    font-size: 0.78rem;
+    gap: 0.4rem 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .band-tabs {
+    margin-bottom: 0.75rem;
+  }
+
+  .subsection-card {
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
   }
 
   a { color: inherit; text-decoration: none; }
