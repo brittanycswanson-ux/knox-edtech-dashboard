@@ -1,8 +1,8 @@
 {
-  "generated": "2026-04-10T03:54:03.346Z",
-  "totalResponses": 1239,
+  "generated": "2026-04-11T03:30:49.999Z",
+  "totalResponses": 1240,
   "byCounty": {
-    "Allegheny": 359,
+    "Allegheny": 360,
     "Montgomery": 330,
     "Chester": 152,
     "Delaware": 145,
@@ -46,7 +46,7 @@
     "Just right": 345,
     "Not enough": 4,
     "No opinion": 56,
-    "I don't know": 144
+    "I don't know": 145
   },
   "byGradeBand": {
     "K-2": {
@@ -68,7 +68,7 @@
       "Just right": 53,
       "Not enough": 2,
       "No opinion": 12,
-      "I don't know": 15
+      "I don't know": 16
     },
     "9-12": {
       "Too much": 155,
@@ -81,13 +81,13 @@
   "commsRating": {
     "Very poorly": 275,
     "Poorly": 423,
-    "Neutral": 340,
+    "Neutral": 341,
     "Well": 143,
     "Very well": 58
   },
   "concernsTopLine": {
     "Yes": 997,
-    "No": 242
+    "No": 243
   },
   "concernsBreakdown": {
     "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 895,
@@ -132,7 +132,7 @@
     "6-8": {
       "topLine": {
         "Yes": 323,
-        "No": 62
+        "No": 63
       },
       "breakdown": {
         "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 289,
@@ -161,12 +161,12 @@
     }
   },
   "policies": {
-    "Prohibit recreational screen use during the school day": 1006,
+    "Prohibit recreational screen use during the school day": 1007,
     "Paper-and-pencil homework only for elementary school": 911,
     "Invest in teacher training and resources for non-digital instruction": 900,
     "Parental access to student device activity": 878,
-    "Guarantee right to opt out of unproven EdTech and AI": 759,
-    "Require explicit opt-in for generative AI tools": 753,
+    "Guarantee right to opt out of unproven EdTech and AI": 760,
+    "Require explicit opt-in for generative AI tools": 754,
     "Keep school devices at school in elementary, limit take-home in middle school": 748,
     "Parental consent for each data-collecting app or website": 685,
     "Reconsider the 1:1 device model and return to shared devices in K-8": 601
@@ -14984,9 +14984,9 @@
       }
     },
     "Charter school": {
-      "totalResponses": 26,
+      "totalResponses": 27,
       "byCounty": {
-        "Allegheny": 15,
+        "Allegheny": 16,
         "Philadelphia": 3,
         "Lehigh": 2,
         "Beaver": 2,
@@ -15000,7 +15000,7 @@
         "Just right": 13,
         "Not enough": 1,
         "No opinion": 2,
-        "I don't know": 7
+        "I don't know": 8
       },
       "anyTooMuch": 12,
       "byGradeBand": {
@@ -15023,7 +15023,7 @@
           "Just right": 3,
           "Not enough": 0,
           "No opinion": 1,
-          "I don't know": 2
+          "I don't know": 3
         },
         "9-12": {
           "Too much": 0,
@@ -15036,13 +15036,13 @@
       "commsRating": {
         "Very poorly": 7,
         "Poorly": 9,
-        "Neutral": 5,
+        "Neutral": 6,
         "Well": 2,
         "Very well": 3
       },
       "concernsTopLine": {
         "Yes": 17,
-        "No": 9
+        "No": 10
       },
       "concernsBreakdown": {
         "Impact on attention span and focus": 13,
@@ -15087,7 +15087,7 @@
         "6-8": {
           "topLine": {
             "Yes": 7,
-            "No": 5
+            "No": 6
           },
           "breakdown": {
             "Impact on attention span and focus": 5,
@@ -15108,12 +15108,12 @@
         }
       },
       "policies": {
-        "Prohibit recreational screen use during the school day": 22,
+        "Prohibit recreational screen use during the school day": 23,
         "Parental access to student device activity": 22,
+        "Require explicit opt-in for generative AI tools": 20,
         "Invest in teacher training and resources for non-digital instruction": 20,
         "Paper-and-pencil homework only for elementary school": 19,
-        "Require explicit opt-in for generative AI tools": 19,
-        "Guarantee right to opt out of unproven EdTech and AI": 16,
+        "Guarantee right to opt out of unproven EdTech and AI": 17,
         "Parental consent for each data-collecting app or website": 16,
         "Reconsider the 1:1 device model and return to shared devices in K-8": 14,
         "Keep school devices at school in elementary, limit take-home in middle school": 13
