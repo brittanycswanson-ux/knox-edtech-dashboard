@@ -533,6 +533,7 @@ body {
 }
 @media (max-width: 640px) {
   .quotes-grid { grid-template-columns: 1fr; }
+  .quote-card--wide .quote-text { column-count: 1; }
 }
 .quote-card {
   margin: 0;
@@ -545,12 +546,33 @@ body {
   display: flex;
   flex-direction: column;
 }
+.quote-card--wide {
+  grid-column: 1 / -1;
+}
+.quote-card--wide .quote-text {
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 1px solid var(--sand);
+}
 .quote-text {
   font-size: 0.88rem;
   color: var(--forest);
   line-height: 1.55;
   flex: 1;
   margin-bottom: 0.6rem;
+}
+.quote-paragraph {
+  margin: 0 0 0.5rem;
+  break-inside: avoid;
+}
+.quote-bullet {
+  margin: 0 0 0.65rem;
+  padding-left: 1.1rem;
+  text-indent: -0.75rem;
+  break-inside: avoid;
+}
+.quote-bullet::before {
+  content: '\2014\00a0';
 }
 .quote-attr {
   font-size: 0.78rem;

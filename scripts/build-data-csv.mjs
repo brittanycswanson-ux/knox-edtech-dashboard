@@ -30,14 +30,19 @@ const EXCLUDE_QUOTES = [
   'I sometimes find out my child has been onscreen a lot',
   'These devices are not issued by school but they are required',
   'chrome book out at lunch',
-  'Kids are playing videogames, shopping, and exposed to inappropriate content',
   'I am looping back to use for Social Studies and Science',
+];
+
+// Substrings identifying quotes that should NOT be truncated
+const NO_TRUNCATE_QUOTES = [
+  'Kids are playing videogames, shopping, and exposed to inappropriate content',
 ];
 
 const MAX_QUOTE_LEN = 360;
 
 function truncateQuote(text) {
   const t = text.trim();
+  if (NO_TRUNCATE_QUOTES.some(s => t.includes(s))) return t;
   if (t.length <= MAX_QUOTE_LEN) return t;
   const sub = t.slice(0, MAX_QUOTE_LEN);
   const paraEnd = Math.max(sub.lastIndexOf('.\n'), sub.lastIndexOf('!\n'), sub.lastIndexOf('?\n'));
@@ -222,10 +227,15 @@ for (const row of records) {
 
   const detail = gc('concernDetails');
   if (detail) {
-    const truncated = truncateQuote(detail);
+    const isFullLength = NO_TRUNCATE_QUOTES.some(s => detail.includes(s));
+    const truncated = isFullLength ? detail.trim() : truncateQuote(detail);
     if (EXCLUDE_QUOTES.some(ex => truncated.includes(ex))) continue;
     const score = scoreQuote(truncated);
-    if (score > 0) quotePool.push({ text: truncated, county: gc('county') || null, district: district || null, score });
+    if (isFullLength) {
+      quotePool.push({ text: truncated, county: gc('county') || null, district: district || null, score: 999, wide: true });
+    } else if (score > 0) {
+      quotePool.push({ text: truncated, county: gc('county') || null, district: district || null, score });
+    }
   }
 }
 
@@ -233,17 +243,38 @@ quotePool.sort((a, b) => b.score - a.score);
 console.log(`Quote pool: ${quotePool.length} scored`);
 
 const quotesByCounty = {};
+const wideQuotesByCounty = {};
 for (const q of quotePool) {
   if (!q.county) continue;
+  if (q.wide) {
+    if (!wideQuotesByCounty[q.county]) wideQuotesByCounty[q.county] = [];
+    wideQuotesByCounty[q.county].push({ text: q.text, county: q.county, wide: true });
+    continue;
+  }
   if (!quotesByCounty[q.county]) quotesByCounty[q.county] = [];
   if (quotesByCounty[q.county].length < 6) quotesByCounty[q.county].push({ text: q.text, county: q.county });
 }
+// Append wide quotes at the end
+for (const [county, wides] of Object.entries(wideQuotesByCounty)) {
+  if (!quotesByCounty[county]) quotesByCounty[county] = [];
+  quotesByCounty[county].push(...wides);
+}
 
 const quotesByDistrict = {};
+const wideQuotesByDistrict = {};
 for (const q of quotePool) {
   if (!q.district) continue;
+  if (q.wide) {
+    if (!wideQuotesByDistrict[q.district]) wideQuotesByDistrict[q.district] = [];
+    wideQuotesByDistrict[q.district].push({ text: q.text, county: q.county, wide: true });
+    continue;
+  }
   if (!quotesByDistrict[q.district]) quotesByDistrict[q.district] = [];
   quotesByDistrict[q.district].push({ text: q.text, county: q.county });
+}
+for (const [dist, wides] of Object.entries(wideQuotesByDistrict)) {
+  if (!quotesByDistrict[dist]) quotesByDistrict[dist] = [];
+  quotesByDistrict[dist].push(...wides);
 }
 
 const districts = Object.entries(byDistrict)
