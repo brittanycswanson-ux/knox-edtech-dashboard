@@ -55,6 +55,11 @@ const NO_TRUNCATE_QUOTES = [
   'Kids are playing videogames, shopping, and exposed to inappropriate content',
 ];
 
+// Extra text to append to specific quotes (keyed by NO_TRUNCATE substring match)
+const APPEND_TO_QUOTES = {
+  'Kids are playing videogames': '\n\n- AI cheating is rampant. Serious concern about the inequity of AI cheaters in HS getting away with it and taking the spots in college. Get rid of 1:1 all the way through 12th grade.',
+};
+
 const MAX_QUOTE_LEN = 360;
 
 function truncateQuote(text) {
@@ -280,7 +285,12 @@ async function main() {
     const detail = getCell(row, 'concernDetails');
     if (detail) {
       const isFullLength = NO_TRUNCATE_QUOTES.some(s => detail.includes(s));
-      const truncated = isFullLength ? detail.trim() : truncateQuote(detail);
+      let truncated = isFullLength ? detail.trim() : truncateQuote(detail);
+      if (isFullLength) {
+        for (const [key, extra] of Object.entries(APPEND_TO_QUOTES)) {
+          if (truncated.includes(key)) truncated += extra;
+        }
+      }
       if (EXCLUDE_QUOTES.some(ex => truncated.includes(ex))) continue;
       const score = scoreQuote(truncated);
       if (isFullLength) {
