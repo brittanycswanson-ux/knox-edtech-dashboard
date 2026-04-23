@@ -711,6 +711,52 @@ body {
 }
 .error-state { color: var(--red); }
 
+/* ── Methodology accordion ──────────────────────────────── */
+.methodology {
+  margin-top: 2rem;
+  border: 1px solid var(--sand);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+}
+.methodology-toggle {
+  padding: 0.85rem 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--forest-mid);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.methodology-toggle::-webkit-details-marker { display: none; }
+.methodology-toggle::before {
+  content: '\25B6';
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}
+.methodology[open] .methodology-toggle::before {
+  transform: rotate(90deg);
+}
+.methodology-body {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--forest);
+}
+.methodology-body h3 {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin: 1rem 0 0.3rem;
+  color: var(--forest);
+}
+.methodology-body h3:first-child { margin-top: 0; }
+.methodology-body p {
+  margin: 0 0 0.5rem;
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .site-footer {
   background: var(--forest);

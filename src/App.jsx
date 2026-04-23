@@ -247,6 +247,37 @@ export default function App() {
             )}
           </>
         )}
+
+        <details className="methodology">
+          <summary className="methodology-toggle">About This Survey</summary>
+          <div className="methodology-body">
+            <h3>Survey Design</h3>
+            <p>
+              The survey was designed by the PA Unplugged leadership team, drawing on
+              professional backgrounds in education policy, research design, and survey
+              methodology. It captures parent perspectives across multiple dimensions: screen
+              time volume, specific concerns, school communication, and policy preferences.
+              The survey includes both structured questions (multiple choice, rating scales)
+              and an open-ended response field for parents to share additional concerns in
+              their own words.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              The survey was distributed through PA Unplugged's network of local leads, who shared
+              it with parent communities in their regions — both families connected to PA Unplugged's
+              work and parents with no prior affiliation. It was also shared in Pennsylvania
+              parenting groups on Facebook and relevant subreddits, and promoted through
+              paid ads on Instagram and Facebook targeting parents in Pennsylvania. Distribution
+              was designed to be as broad as organizational capacity allowed, but was not
+              systematic or randomized.
+            </p>
+            <h3>Fielding Period</h3>
+            <p>
+              The survey opened on February 17, 2026 and remains open. Results on this dashboard
+              update daily as new responses come in.
+            </p>
+          </div>
+        </details>
       </main>
 
       <Footer generated={data?.generated} />
