@@ -12,6 +12,21 @@ import PolicyBreakdown from './components/PolicyBreakdown.jsx';
 import ParentVoices from './components/ParentVoices.jsx';
 import SchoolTypeComparison from './components/SchoolTypeComparison.jsx';
 
+const SPOTLIGHT_QUOTES = [
+  {
+    text: "My children have IEPs for ADHD. Since middle school, it’s been a battle to get them off games and YouTube. Despite the many IEP meetings, I keep hearing it’s a requirement to have a Chromebook. They are not learning. What would a child with executive function delays do… Write a paper or play Minecraft? (I’ve requested access to the game be blocked, to which it’s not.)",
+    county: "Montgomery County",
+  },
+  {
+    text: "My child’s first device use was at school, first inappropriate content viewed was at school, first exposure to “group chats” was at school, first opportunity for multitasking and digital distraction was at school. I felt that many of my goals as a parent were completely undermined by school-issued devices.",
+    county: "Allegheny County",
+  },
+  {
+    text: "Our 15 year old was a straight A student, he is now failing nearly every subject. His attention span is extremely poor and we have extraordinary difficulty setting boundaries with technology because he insists that he needs the computer for schoolwork. He will borrow extra devices from school so that even when we collect his laptop at night, he has an extra device that we’re not aware of. He gets distracted by web-based games constantly. It’s clear based on his tabs/search history that he plays games IN CLASS. He forgets to turn in tests/assignments and teachers don’t seem to notice. Technology is so pervasive; we feel trapped because even if we set rules at home, we have to allow for the access required for assignments. We tried blocking YouTube, but found that the teachers frequently linked to YouTube videos. It feels impossible.",
+    county: "Philadelphia County",
+  },
+];
+
 function pct(numerator, denominator) {
   if (!denominator) return 0;
   return Math.round((numerator / denominator) * 100);
@@ -223,7 +238,11 @@ export default function App() {
                     ? `In their own words — responses from ${quotesScope}`
                     : 'In their own words — responses from across Pennsylvania'}
                 </p>
-                <ParentVoices quotes={activeQuotes} scoped={!!quotesScope} />
+                <ParentVoices
+                  quotes={activeQuotes}
+                  scoped={!!quotesScope}
+                  spotlights={!quotesScope ? SPOTLIGHT_QUOTES : null}
+                />
               </section>
             )}
           </>

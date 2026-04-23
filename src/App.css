@@ -526,6 +526,37 @@ body {
 }
 
 /* ── Parent Voices quotes ────────────────────────────────── */
+.quote-spotlight {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--forest);
+  color: var(--cream);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+.quote-spotlight-text {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.55;
+  font-style: italic;
+}
+.quote-spotlight-attr {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sage);
+}
+@media (max-width: 640px) {
+  .quote-spotlight { padding: 1.25rem 1.25rem; }
+  .quote-spotlight-text { font-size: 1rem; }
+}
+.quotes-grid + .quote-spotlight {
+  margin-top: 1.5rem;
+}
 .quotes-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
