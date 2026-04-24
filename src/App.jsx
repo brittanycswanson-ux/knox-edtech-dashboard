@@ -25,6 +25,10 @@ const SPOTLIGHT_QUOTES = [
     text: "Our 15 year old was a straight A student, he is now failing nearly every subject. His attention span is extremely poor and we have extraordinary difficulty setting boundaries with technology because he insists that he needs the computer for schoolwork. He will borrow extra devices from school so that even when we collect his laptop at night, he has an extra device that we’re not aware of. He gets distracted by web-based games constantly. It’s clear based on his tabs/search history that he plays games IN CLASS. He forgets to turn in tests/assignments and teachers don’t seem to notice. Technology is so pervasive; we feel trapped because even if we set rules at home, we have to allow for the access required for assignments. We tried blocking YouTube, but found that the teachers frequently linked to YouTube videos. It feels impossible.",
     county: "Philadelphia County",
   },
+  {
+    text: "The programs that are intended to remediate and re-teach are all \"cheatable.\" I’m a teacher, and students know how to \"AI\" answers for everything online. Also, screen-work leads to students having less pride and care for their work.",
+    county: "Lehigh County",
+  },
 ];
 
 function pct(numerator, denominator) {
