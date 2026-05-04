@@ -48,16 +48,15 @@ const EXCLUDE_QUOTES = [
   'These devices are not issued by school but they are required',
   'chrome book out at lunch',
   'I am looping back to use for Social Studies and Science',
+  'Kids are playing videogames, shopping, and exposed to inappropriate content',
 ];
 
 // Substrings identifying quotes that should NOT be truncated
 const NO_TRUNCATE_QUOTES = [
-  'Kids are playing videogames, shopping, and exposed to inappropriate content',
 ];
 
 // Extra text to append to specific quotes (keyed by NO_TRUNCATE substring match)
 const APPEND_TO_QUOTES = {
-  'Kids are playing videogames': '\n\n- AI cheating is rampant. Serious concern about the inequity of AI cheaters in HS getting away with it and taking the spots in college. Get rid of 1:1 all the way through 12th grade.',
 };
 
 const MAX_QUOTE_LEN = 360;
