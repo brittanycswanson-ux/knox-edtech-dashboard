@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build data pipeline — fetches PA Unplugged EdTech Survey responses from Google Sheets,
+ * Build data pipeline — fetches Knox County EdTech Survey responses from Google Sheets,
  * aggregates counts, and writes public/data/dashboard.json for the React frontend.
  *
  * Required env vars:
@@ -44,11 +44,6 @@ const VIVID_WORDS = [
 
 // Substrings that uniquely identify quotes to exclude from display
 const EXCLUDE_QUOTES = [
-  'I sometimes find out my child has been onscreen a lot',
-  'These devices are not issued by school but they are required',
-  'chrome book out at lunch',
-  'I am looping back to use for Social Studies and Science',
-  'Kids are playing videogames, shopping, and exposed to inappropriate content',
 ];
 
 // Substrings identifying quotes that should NOT be truncated
@@ -66,10 +61,8 @@ function truncateQuote(text) {
   if (NO_TRUNCATE_QUOTES.some(s => t.includes(s))) return t;
   if (t.length <= MAX_QUOTE_LEN) return t;
   const sub = t.slice(0, MAX_QUOTE_LEN);
-  // Prefer paragraph boundary (sentence end before a newline)
   const paraEnd = Math.max(sub.lastIndexOf('.\n'), sub.lastIndexOf('!\n'), sub.lastIndexOf('?\n'));
   if (paraEnd > MAX_QUOTE_LEN * 0.35) return t.slice(0, paraEnd + 1).trim();
-  // Fall back to inline sentence boundary
   const sentEnd = Math.max(sub.lastIndexOf('. '), sub.lastIndexOf('! '), sub.lastIndexOf('? '));
   if (sentEnd > MAX_QUOTE_LEN * 0.35) return t.slice(0, sentEnd + 1).trim();
   return sub.slice(0, sub.lastIndexOf(' ')).trim() + '\u2026';
@@ -80,7 +73,6 @@ function scoreQuote(text) {
   const len = trimmed.length;
   if (len < 70) return 0;
   const lower = trimmed.toLowerCase();
-  // Peak score around 200-300 chars; penalise very long responses
   const lenScore = Math.min(len, 300) / 300 * 35 - Math.max(0, (len - 350) / 150) * 8;
   let score = lenScore;
   for (const word of VIVID_WORDS) {
@@ -144,7 +136,6 @@ function aggregateRow(bucket, row, getCell) {
   const county = getCell(row, 'county');
   if (county) increment(bucket.byCounty, county);
 
-  // Overall screen time sentiment (all bands combined)
   for (const field of fieldMap.sentimentFields) {
     const val = getCell(row, field);
     if (val && val in bucket.screenTimeSentiment) {
@@ -152,11 +143,9 @@ function aggregateRow(bucket, row, getCell) {
     }
   }
 
-  // Track if any band said "Too much" (per unique respondent)
   const tooMuchAnyBand = BAND_FIELDS.some(({ field }) => getCell(row, field) === 'Too much');
   if (tooMuchAnyBand) bucket.anyTooMuch++;
 
-  // Per-band sentiment
   for (const { field, band } of BAND_FIELDS) {
     const val = getCell(row, field);
     if (val && val in bucket.byGradeBand[band]) {
@@ -164,8 +153,6 @@ function aggregateRow(bucket, row, getCell) {
     }
   }
 
-  // School communication rating
-  // NOTE: sheet column may be 'commsRating' or 'communication' depending on Apps Script
   const comms = getCell(row, 'commsRating') || getCell(row, 'communication');
   if (comms && comms in bucket.commsRating) {
     bucket.commsRating[comms]++;
@@ -185,10 +172,9 @@ function aggregateRow(bucket, row, getCell) {
     bucket.concernsTopLine.No++;
   }
 
-  // Attribute concerns to each grade band the respondent has children in
   for (const { field, band } of BAND_FIELDS) {
     const val = getCell(row, field);
-    if (!val) continue; // respondent has no child in this band
+    if (!val) continue;
     if (hasConcerns === 'Yes') {
       bucket.concernsByGradeBand[band].topLine.Yes++;
       for (const concern of concernList) {
@@ -302,31 +288,18 @@ async function main() {
 
   quotePool.sort((a, b) => b.score - a.score);
 
-  // Hand-curated statewide featured quotes — 20 voices, one per county,
-  // selected for broad relatability and impact with maximum geographic diversity.
+  // Featured quotes — replace these with real Knox County responses once survey data comes in
   const featuredQuotes = [
-    { text: "My biggest concern is school devices undermining screen time policies at home. My 5th grader exclusively has homework on her Chromebook; it's difficult to police where homework ends and YouTube time begins.", county: 'Philadelphia' },
-    { text: "My daughter spends way too much time on screens at school. Much of her curriculum is screen based. She\u2019s exhausted and unregulated when she gets home.", county: 'Allegheny' },
-    { text: "I\u2019m very concerned about the lack of evidence of growth using ed tech vs \u201cold school methods\u201d. The data suggests [there] is no growth using ed tech and could argue it is creating a disconnect between student and teacher/classroom. The more we rely on AI and Ed Tech, the more detrimental to the development of our children.", county: 'Montgomery' },
-    { text: "Despite district filters and automated device usage reports sent to me, my 8th grader spends a huge amount of time playing games, watching YouTube shorts, and checking professional sports statistics while at school. When he comes home, I spend time sitting with him helping him stay on track while he gets his online school work completed.", county: 'Bucks' },
-    { text: "My daughter often complains that the screens \u201cbother my eyes\u201d and she prefers paper and pencil tests and assignments. It seems silly to deny that when her eyes hurt and the goal is student learning. If she says she learns best with paper and pencil, why not make that an option? I know that computer testing makes life easier on the admin side\u2026 but student learning experience should be the top priority.", county: 'Delaware' },
-    { text: "I would like screens banned in elementary school ideally but at minimum a return to shared bank that they visit on a rotation. I think it\u2019s terrible that my kids use screens more than they have gym in a week.", county: 'Chester' },
-    { text: "Our school district allows YouTube, which is not something our children have access to at home. Our district also uses Aristotle, however it works haphazardly. This past fall, my 12 year old came across and Ai chat site through his school issued Chromebook.", county: 'Lancaster' },
-    { text: "My 6 year old son in kindergarten told me today that \u201cmost of his friends watch YouTube on the school iPad\u201d \n6\u2026 years\u2026 old\u2026 in kindergarten.", county: 'Westmoreland' },
-    { text: "We were not given an option of wanting a device. We are also responsible for any damages that may occur to said device throughout the year. Students also bring device home throughout the summer further undermining our strict no device policy at home.", county: 'Luzerne' },
-    { text: "I genuinely have no idea how much time my daughter is in her iPad every day. The school doesn\u2019t communicate it well. We used to do screens on a regular basis at home but we have stopped because of how much ambiguity there is with her school usage.", county: 'Cumberland' },
-    { text: "My son\u2019s teacher told us that there is no way for the school to block everything inappropriate. As parents, I feel as if the school is undoing a lot of our hard work when it comes to limiting screen time and ensuring we know what they are accessing.", county: 'Lackawanna' },
-    { text: "As a parent, I am not allowed to put any monitoring software on the school device. This makes me extremely uncomfortable as my children are allowed to utilize youtube and other websites where harmful content can easily be found.", county: 'Beaver' },
-    { text: "We are very concerned that screens are overused and that schools are not following practices that are best for children from multiple standpoints (mental, physical, social, educational, safety, ets.)\n\nThe devices have restricted some parental access to their students\u2019 work and assessments. This is a huge concern.", county: 'Chester' },
-    { text: "I do not think that kindergarteners should have computers or personal screen time AT ALL. Starting later (even third or fourth grade) would be better. I have looked at the \u201ceducational\u201d programs my children use at school, and most, especially the reading apps, have no educational value at all in my opinion.", county: 'Centre' },
-    { text: "The School District of Philadelphia issue chromebooks to families during COVID but then kept them in place afterwards without asking families if we wanted to take that on. We\u2019re now responsible for these devices and we don\u2019t want to be. Additionally, the protections aren\u2019t great and parents can\u2019t put controls on them.", county: 'Philadelphia' },
-    { text: "I\u2019m concerned about auto-correct on Google correcting all of my son\u2019s work before he submits it. Most of his assignments and projects are done on Google Slides. He is in high school and spends a lot of time at school using his Chromebook to watch Youtube and read the news.", county: 'Northampton' },
-    { text: "Data privacy is my only concern. Use of third-party services are so tempting for schools that do not have the budgets or skills to build the technology they want to use or teach in-house.", county: 'Erie' },
-    { text: "Children are not taught how to read/write/type before being given chromebooks to use for school assignments. Kindergarteners should not have Chromebooks at all!", county: 'Monroe' },
+    { text: "My child comes home every day and tells me they spent most of class watching YouTube on their Chromebook. I didn't send them to school to watch videos.", county: 'Knox County' },
+    { text: "The school-issued device has completely undermined our rules at home. My son knows he can access things on the school Chromebook that we've blocked on our home network.", county: 'Knox County' },
+    { text: "My daughter's handwriting has gotten so bad her doctor commented on it. She does everything on a screen now. There's no balance — it's screens for everything, all day long.", county: 'Knox County' },
+    { text: "I support technology in education when it's purposeful. But right now it feels like the devices are babysitters, not teaching tools.", county: 'Knox County' },
+    { text: "We have no idea what apps are installed on the school device or what our child is accessing. The school doesn't communicate any of this to parents.", county: 'Knox County' },
+    { text: "My kindergartener was given a tablet on the first week of school. She doesn't even know how to read yet. Why does a 5-year-old need a screen all day?", county: 'Knox County' },
   ];
-  console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} hand-curated featured quotes`);
 
-  // Top 6 quotes per county (pool already sorted by score descending)
+  console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} featured quotes`);
+
   const quotesByCounty = {};
   const wideQuotesByCounty = {};
   for (const q of quotePool) {
@@ -346,7 +319,6 @@ async function main() {
     quotesByCounty[county].push(...wides);
   }
 
-  // Top quotes per district (pool already sorted by score descending)
   const quotesByDistrict = {};
   const wideQuotesByDistrict = {};
   for (const q of quotePool) {

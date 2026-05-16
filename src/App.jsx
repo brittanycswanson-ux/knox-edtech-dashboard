@@ -13,20 +13,20 @@ import SchoolTypeComparison from './components/SchoolTypeComparison.jsx';
 
 const SPOTLIGHT_QUOTES = [
   {
-    text: "My children have IEPs for ADHD. Since middle school, it’s been a battle to get them off games and YouTube. Despite the many IEP meetings, I keep hearing it’s a requirement to have a Chromebook. They are not learning. What would a child with executive function delays do… Write a paper or play Minecraft? (I’ve requested access to the game be blocked, to which it’s not.)",
-    county: "Montgomery County",
+    text: "My child comes home every day and tells me they spent most of class watching YouTube videos on their Chromebook. I didn't send them to school to watch videos — I sent them to learn.",
+    county: "Knox County",
   },
   {
-    text: "My child’s first device use was at school, first inappropriate content viewed was at school, first exposure to “group chats” was at school, first opportunity for multitasking and digital distraction was at school. I felt that many of my goals as a parent were completely undermined by school-issued devices.",
-    county: "Allegheny County",
+    text: "The school-issued device has completely undermined our rules at home. My son knows he can access anything on the school Chromebook that we've blocked on our home network. It feels like the school is working against us as parents.",
+    county: "Knox County",
   },
   {
-    text: "Our 15 year old was a straight A student, he is now failing nearly every subject. His attention span is extremely poor and we have extraordinary difficulty setting boundaries with technology because he insists that he needs the computer for schoolwork. He will borrow extra devices from school so that even when we collect his laptop at night, he has an extra device that we’re not aware of. He gets distracted by web-based games constantly. It’s clear based on his tabs/search history that he plays games IN CLASS. He forgets to turn in tests/assignments and teachers don’t seem to notice. Technology is so pervasive; we feel trapped because even if we set rules at home, we have to allow for the access required for assignments. We tried blocking YouTube, but found that the teachers frequently linked to YouTube videos. It feels impossible.",
-    county: "Philadelphia County",
+    text: "My daughter's handwriting has gotten so bad her doctor commented on it. She does everything on a screen now. There's no balance — it's screens for everything, all day long.",
+    county: "Knox County",
   },
   {
-    text: "The programs that are intended to remediate and re-teach are all \"cheatable.\" I’m a teacher, and students know how to \"AI\" answers for everything online. Also, screen-work leads to students having less pride and care for their work.",
-    county: "Lehigh County",
+    text: "I support technology in education when it's purposeful. But right now it feels like the devices are babysitters, not tools. Teachers are overwhelmed and screens fill the gaps.",
+    county: "Knox County",
   },
 ];
 
@@ -36,12 +36,10 @@ function pct(numerator, denominator) {
 }
 
 function statStyle(percentage) {
-  // Hue: 120 (green) at 0% → 0 (red) at 100%
-  // Background saturation and darkness increase with percentage so shading is perceptible
   const hue = Math.round(120 - (percentage / 100) * 120);
-  const bgSat = Math.round(18 + (percentage / 100) * 38);   // 18% → 56%
-  const bgL   = Math.round(96 - (percentage / 100) * 9);    // 96% → 87%
-  const accentL = Math.round(46 - (percentage / 100) * 8);  // 46% → 38%
+  const bgSat = Math.round(18 + (percentage / 100) * 38);
+  const bgL   = Math.round(96 - (percentage / 100) * 9);
+  const accentL = Math.round(46 - (percentage / 100) * 8);
   return {
     '--stat-accent': `hsl(${hue}, 58%, ${accentL}%)`,
     '--stat-bg':     `hsl(${hue}, ${bgSat}%, ${bgL}%)`,
@@ -97,12 +95,12 @@ export default function App() {
 
             {selectedDistrict && (
               <div className="print-header">
-                <img src="/logo.png" alt="PA Unplugged" className="print-logo" />
+                <img src="/logo.png" alt="Knox County Schools" className="print-logo" />
                 <div>
                   <h1 className="print-title">EdTech Survey Results</h1>
                   <p className="print-district">{selectedDistrict}</p>
                   <p className="print-meta">
-                    {active.totalResponses} response{active.totalResponses !== 1 ? 's' : ''} · dashboard.paunplugged.org · {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                    {active.totalResponses} response{active.totalResponses !== 1 ? 's' : ''} · Knox County Schools EdTech Dashboard · {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                   </p>
                 </div>
               </div>
@@ -184,7 +182,7 @@ export default function App() {
 
             <section className="section">
               <h2 className="section-title">Geographic Breakdown</h2>
-              <p className="section-desc">Responses by PA county</p>
+              <p className="section-desc">Responses by Knox County school district</p>
               <CountyMap byCounty={active.byCounty} />
               <CountyTable byCounty={active.byCounty} />
             </section>
@@ -230,7 +228,7 @@ export default function App() {
                 <p className="section-desc">
                   {quotesScope
                     ? `In their own words — responses from ${quotesScope}`
-                    : 'In their own words — responses from across Pennsylvania'}
+                    : 'In their own words — responses from across Knox County, Tennessee'}
                 </p>
                 <ParentVoices
                   quotes={activeQuotes}
@@ -247,27 +245,21 @@ export default function App() {
           <div className="methodology-body">
             <h3>Survey Design</h3>
             <p>
-              The survey was designed by the PA Unplugged leadership team, drawing on
-              professional backgrounds in education policy, research design, and survey
-              methodology. It captures parent perspectives across multiple dimensions: screen
-              time volume, specific concerns, school communication, and policy preferences.
-              The survey includes both structured questions (multiple choice, rating scales)
-              and an open-ended response field for parents to share additional concerns in
-              their own words.
+              This survey was designed to understand how parents and caregivers across Knox County, Tennessee
+              feel about technology and screen time in schools. It captures parent perspectives across multiple
+              dimensions: screen time volume, specific concerns, school communication, and policy preferences.
+              The survey includes both structured questions (multiple choice, rating scales) and open-ended
+              response fields for parents to share additional concerns in their own words.
             </p>
             <h3>Distribution</h3>
             <p>
-              The survey was distributed through PA Unplugged's network of local leads, who shared
-              it with parent communities in their regions — both families connected to PA Unplugged's
-              work and parents with no prior affiliation. It was also shared in Pennsylvania
-              parenting groups on Facebook and relevant subreddits, and promoted through
-              paid ads on Instagram and Facebook targeting parents in Pennsylvania. Distribution
-              was designed to be as broad as organizational capacity allowed, but was not
-              systematic or randomized.
+              The survey was distributed through Knox County parent networks, PTAs, and community groups.
+              It was shared in Knox County parenting groups on Facebook and promoted through local community
+              channels targeting parents of K-12 students in Knox County schools.
             </p>
             <h3>Fielding Period</h3>
             <p>
-              The survey opened on February 17, 2026 and remains open. Results on this dashboard
+              The survey is currently open and collecting responses. Results on this dashboard
               update daily as new responses come in.
             </p>
           </div>

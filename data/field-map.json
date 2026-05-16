@@ -1,5 +1,5 @@
 {
-  "_comment": "Maps Google Sheet column headers to internal field names. Update if Apps Script column names differ.",
+  "_comment": "Maps Google Sheet column headers to internal field names. Knox County, TN version.",
   "columns": {
     "Timestamp": "timestamp",
     "schoolType": "schoolType",
@@ -56,5 +56,19 @@
     "Parental access to student device activity",
     "Invest in teacher training and resources for non-digital instruction",
     "Other"
-  ]
+  ],
+  "geography": {
+    "label": "School District",
+    "districts": [
+      "District 1",
+      "District 2",
+      "District 3",
+      "District 4",
+      "District 5",
+      "District 6",
+      "District 7",
+      "District 8",
+      "District 9"
+    ]
+  }
 }
