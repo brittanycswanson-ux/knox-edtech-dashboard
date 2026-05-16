@@ -105,9 +105,7 @@ body {
   flex-shrink: 0;
 }
 .header-logo {
-  height: 96px;
-  width: auto;
-  cursor: pointer;
+  display: none;
 }
 
 /* ── Main layout ─────────────────────────────────────────── */
