@@ -283,19 +283,51 @@ body {
 .concern-pct  { color: var(--forest-mid); white-space: nowrap; font-size: 0.8rem; }
 .hero-footnote { font-size: 0.78rem; color: var(--forest-light); font-style: italic; }
 
-/* ── County Map ──────────────────────────────────────────── */
+/* ── District Chart ─────────────────────────────────────── */
+.district-chart {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.district-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 80px;
+  align-items: center;
+  gap: 0.75rem;
+}
+.district-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--forest);
+  white-space: nowrap;
+}
+.district-bar-wrap {
+  height: 24px;
+  background: var(--warm);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.district-bar {
+  height: 100%;
+  background: var(--forest-mid);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+  min-width: 2px;
+}
+.district-count {
+  font-size: 0.82rem;
+  color: var(--forest-mid);
+  white-space: nowrap;
+}
+.district-pct {
+  color: var(--forest-light);
+}
+
+/* ── County Map (legacy, kept for print) ────────────────── */
 .county-map-wrap {
   position: relative;
   margin-bottom: 1.5rem;
-}
-.county-map-svg {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  background: var(--forest-pale);
-  border: 1px solid var(--sand);
-  border-radius: var(--radius-sm);
 }
 .map-tooltip {
   position: fixed;
@@ -308,20 +340,40 @@ body {
   z-index: 100;
   white-space: nowrap;
 }
-.map-legend {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  font-size: 0.78rem;
-  color: var(--forest-mid);
+
+/* ── County Table ────────────────────────────────────────── */
+.county-table-wrap {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--sand);
+  border-radius: var(--radius-sm);
 }
-.legend-swatch {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  vertical-align: middle;
+.county-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.county-table th {
+  position: sticky;
+  top: 0;
+  background: var(--forest-pale);
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--forest);
+  border-bottom: 1px solid var(--sand);
+}
+.county-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.county-table th.sortable:hover { background: #d5e8db; }
+.county-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--warm);
+}
+.county-table tr:last-child td { border-bottom: none; }
+.county-table tr:hover td { background: var(--forest-pale); }
 }
 
 /* ── County Table ────────────────────────────────────────── */

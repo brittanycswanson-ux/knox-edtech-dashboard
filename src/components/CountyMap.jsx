@@ -1,64 +1,30 @@
-import { useState } from 'react';
-import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
-
-const GEO_URL = '/data/pa-counties.json';
-
-function getColor(count, maxCount) {
-  if (!count || count === 0) return '#e8f5e9';
-  const t = Math.min(count / maxCount, 1);
-  const r = Math.round(200 - t * 173);
-  const g = Math.round(230 - t * 136);
-  const b = Math.round(201 - t * 169);
-  return `rgb(${r},${g},${b})`;
-}
-
 export default function CountyMap({ byCounty }) {
-  const [tooltip, setTooltip] = useState(null);
-  const maxCount = Math.max(1, ...Object.values(byCounty));
+  const entries = Object.entries(byCounty);
+  if (entries.length === 0) return null;
+
+  const maxCount = Math.max(1, ...entries.map(([, c]) => c));
+  const total = entries.reduce((s, [, c]) => s + c, 0);
+
+  const sorted = [...entries].sort(([, a], [, b]) => b - a);
 
   return (
-    <div className="county-map-wrap">
-      <ComposableMap
-        projection="geoMercator"
-        projectionConfig={{ scale: 7200, center: [-77.6, 41.0] }}
-        width={800}
-        height={340}
-        style={{ width: '100%', height: 'auto' }}
-      >
-        <Geographies geography={GEO_URL}>
-          {({ geographies }) =>
-            geographies.map(geo => {
-              const county = geo.properties.name;
-              const count = byCounty[county] || 0;
-              return (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill={getColor(count, maxCount)}
-                  stroke="#fff"
-                  strokeWidth={0.6}
-                  style={{
-                    default: { outline: 'none' },
-                    hover: { outline: 'none', opacity: 0.85, cursor: count > 0 ? 'pointer' : 'default' },
-                    pressed: { outline: 'none' },
-                  }}
-                  onMouseEnter={e => setTooltip({ county, count, x: e.clientX, y: e.clientY })}
-                  onMouseMove={e => setTooltip(t => t ? { ...t, x: e.clientX, y: e.clientY } : t)}
-                  onMouseLeave={() => setTooltip(null)}
-                />
-              );
-            })
-          }
-        </Geographies>
-      </ComposableMap>
-
-      {tooltip && (
-        <div className="map-tooltip" style={{ left: tooltip.x + 12, top: tooltip.y - 44 }}>
-          <strong>{tooltip.county} County</strong><br />
-          {tooltip.count} {tooltip.count === 1 ? 'response' : 'responses'}
-        </div>
-      )}
-
+    <div className="district-chart">
+      {sorted.map(([district, count]) => {
+        const pct = Math.round((count / total) * 100);
+        const barWidth = Math.round((count / maxCount) * 100);
+        return (
+          <div key={district} className="district-row">
+            <div className="district-name">{district}</div>
+            <div className="district-bar-wrap">
+              <div
+                className="district-bar"
+                style={{ width: `${barWidth}%` }}
+              />
+            </div>
+            <div className="district-count">{count} <span className="district-pct">({pct}%)</span></div>
+          </div>
+        );
+      })}
     </div>
   );
 }
