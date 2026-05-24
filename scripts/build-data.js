@@ -258,7 +258,7 @@ async function main() {
       aggregateRow(bySchoolType[schoolType], row, getCell);
     }
 
-    let district = getCell(row, 'district');
+    let district = getCell(row, 'district') || getCell(row, 'county');
     if (!district || district.toLowerCase().includes('other')) {
       district = getCell(row, 'districtOther');
     }
