@@ -289,7 +289,16 @@ async function main() {
   quotePool.sort((a, b) => b.score - a.score);
 
   // Featured quotes — replace these with real Knox County responses once survey data comes in
- const featuredQuotes = [];
+ const featuredQuotes = quotePool
+  .filter(q => {
+    const row = dataRows.find(r => {
+      const detail = getCell(r, 'concernDetails');
+      return detail && q.text.startsWith(detail.trim().slice(0, 40));
+    });
+    if (!row) return false;
+    return getCell(row, 'featuredQuote') === 'Yes';
+  })
+  .map(q => ({ text: q.text, county: q.district || q.county }));
 
   console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} featured quotes`);
 
