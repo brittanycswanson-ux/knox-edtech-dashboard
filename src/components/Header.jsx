@@ -16,7 +16,7 @@ export default function Header() {
           <a href="https://www.knoxschools.org" target="_blank" rel="noopener noreferrer">
             <img src="/logo.png" alt="Knox County Schools" className="header-logo" />
           </a>
-          <a className="header-cta" href="https://survey.knoxschools.org" target="_blank" rel="noopener noreferrer">
+          <a className="header-cta" href="https://parent-edtech-survey-virid.vercel.app" target="_blank" rel="noopener noreferrer">
             Take the Survey
           </a>
         </div>
