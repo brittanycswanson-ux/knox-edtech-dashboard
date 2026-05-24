@@ -289,14 +289,7 @@ async function main() {
   quotePool.sort((a, b) => b.score - a.score);
 
   // Featured quotes — replace these with real Knox County responses once survey data comes in
-  const featuredQuotes = [
-    { text: "My child comes home every day and tells me they spent most of class watching YouTube on their Chromebook. I didn't send them to school to watch videos.", county: '' },
-    { text: "The school-issued device has completely undermined our rules at home. My son knows he can access things on the school Chromebook that we've blocked on our home network.", county: '' },
-    { text: "My daughter's handwriting has gotten so bad her doctor commented on it. She does everything on a screen now. There's no balance — it's screens for everything, all day long.", county: '' },
-    { text: "I support technology in education when it's purposeful. But right now it feels like the devices are babysitters, not teaching tools.", county: '' },
-    { text: "We have no idea what apps are installed on the school device or what our child is accessing. The school doesn't communicate any of this to parents.", county: '' },
-    { text: "My kindergartener was given a tablet on the first week of school. She doesn't even know how to read yet. Why does a 5-year-old need a screen all day?", county: '' },
-  ];
+ const featuredQuotes = [];
 
   console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} featured quotes`);
 
