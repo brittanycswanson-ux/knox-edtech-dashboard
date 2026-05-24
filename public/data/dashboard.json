@@ -1,13 +1,12 @@
 {
-  "generated": "2026-05-24T20:19:18.292Z",
-  "totalResponses": 5,
+  "generated": "2026-05-24T20:28:51.127Z",
+  "totalResponses": 2,
   "byCounty": {
-    "District 4": 2,
-    "District 1": 1
+    "District 4": 2
   },
-  "anyTooMuch": 3,
+  "anyTooMuch": 2,
   "screenTimeSentiment": {
-    "Too much": 5,
+    "Too much": 4,
     "Just right": 0,
     "Not enough": 0,
     "No opinion": 0,
@@ -15,7 +14,7 @@
   },
   "byGradeBand": {
     "K-2": {
-      "Too much": 3,
+      "Too much": 2,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
@@ -44,18 +43,18 @@
     }
   },
   "commsRating": {
-    "Very poorly": 3,
+    "Very poorly": 2,
     "Poorly": 0,
     "Neutral": 0,
     "Well": 0,
     "Very well": 0
   },
   "concernsTopLine": {
-    "Yes": 3,
+    "Yes": 2,
     "No": 0
   },
   "concernsBreakdown": {
-    "Impact on attention span and focus": 3,
+    "Impact on attention span and focus": 2,
     "Impact on social skills and peer interaction": 2,
     "Exposure to inappropriate content despite school filters": 2,
     "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
@@ -66,11 +65,11 @@
   "concernsByGradeBand": {
     "K-2": {
       "topLine": {
-        "Yes": 3,
+        "Yes": 2,
         "No": 0
       },
       "breakdown": {
-        "Impact on attention span and focus": 3,
+        "Impact on attention span and focus": 2,
         "Impact on social skills and peer interaction": 2,
         "Exposure to inappropriate content despite school filters": 2,
         "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
@@ -116,7 +115,7 @@
     }
   },
   "policies": {
-    "Reconsider the 1:1 device model and return to shared devices in K-8": 3,
+    "Reconsider the 1:1 device model and return to shared devices in K-8": 2,
     "Keep school devices at school in elementary, limit take-home in middle school": 2,
     "Paper-and-pencil homework only for elementary school": 2,
     "Prohibit recreational screen use during the school day": 2,
@@ -128,119 +127,8 @@
   },
   "districts": [],
   "byDistrict": {},
-  "bySchoolType": {
-    "5/24/2026 14:38:27": {
-      "totalResponses": 1,
-      "byCounty": {},
-      "screenTimeSentiment": {
-        "Too much": 0,
-        "Just right": 0,
-        "Not enough": 0,
-        "No opinion": 0,
-        "I don't know": 0
-      },
-      "anyTooMuch": 0,
-      "byGradeBand": {
-        "K-2": {
-          "Too much": 0,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        },
-        "3-5": {
-          "Too much": 0,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        },
-        "6-8": {
-          "Too much": 0,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        },
-        "9-12": {
-          "Too much": 0,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        }
-      },
-      "commsRating": {
-        "Very poorly": 0,
-        "Poorly": 0,
-        "Neutral": 0,
-        "Well": 0,
-        "Very well": 0
-      },
-      "concernsTopLine": {
-        "Yes": 0,
-        "No": 0
-      },
-      "concernsBreakdown": {},
-      "concernsByGradeBand": {
-        "K-2": {
-          "topLine": {
-            "Yes": 0,
-            "No": 0
-          },
-          "breakdown": {}
-        },
-        "3-5": {
-          "topLine": {
-            "Yes": 0,
-            "No": 0
-          },
-          "breakdown": {}
-        },
-        "6-8": {
-          "topLine": {
-            "Yes": 0,
-            "No": 0
-          },
-          "breakdown": {}
-        },
-        "9-12": {
-          "topLine": {
-            "Yes": 0,
-            "No": 0
-          },
-          "breakdown": {}
-        }
-      },
-      "policies": {}
-    }
-  },
-  "featuredQuotes": [
-    {
-      "text": "My child comes home every day and tells me they spent most of class watching YouTube on their Chromebook. I didn't send them to school to watch videos.",
-      "county": "Knox County"
-    },
-    {
-      "text": "The school-issued device has completely undermined our rules at home. My son knows he can access things on the school Chromebook that we've blocked on our home network.",
-      "county": "Knox County"
-    },
-    {
-      "text": "My daughter's handwriting has gotten so bad her doctor commented on it. She does everything on a screen now. There's no balance — it's screens for everything, all day long.",
-      "county": "Knox County"
-    },
-    {
-      "text": "I support technology in education when it's purposeful. But right now it feels like the devices are babysitters, not teaching tools.",
-      "county": "Knox County"
-    },
-    {
-      "text": "We have no idea what apps are installed on the school device or what our child is accessing. The school doesn't communicate any of this to parents.",
-      "county": "Knox County"
-    },
-    {
-      "text": "My kindergartener was given a tablet on the first week of school. She doesn't even know how to read yet. Why does a 5-year-old need a screen all day?",
-      "county": "Knox County"
-    }
-  ],
+  "bySchoolType": {},
+  "featuredQuotes": [],
   "quotesByCounty": {},
   "quotesByDistrict": {}
 }
