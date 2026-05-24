@@ -1,27 +1,25 @@
 {
-  "generated": "2026-05-24T20:28:51.127Z",
-  "totalResponses": 2,
-  "byCounty": {
-    "District 4": 2
-  },
-  "anyTooMuch": 2,
+  "generated": "2026-05-24T20:33:13.100Z",
+  "totalResponses": 0,
+  "byCounty": {},
+  "anyTooMuch": 0,
   "screenTimeSentiment": {
-    "Too much": 4,
+    "Too much": 0,
     "Just right": 0,
     "Not enough": 0,
     "No opinion": 0,
-    "I don't know": 1
+    "I don't know": 0
   },
   "byGradeBand": {
     "K-2": {
-      "Too much": 2,
+      "Too much": 0,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
       "I don't know": 0
     },
     "3-5": {
-      "Too much": 2,
+      "Too much": 0,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
@@ -32,7 +30,7 @@
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
-      "I don't know": 1
+      "I don't know": 0
     },
     "9-12": {
       "Too much": 0,
@@ -43,68 +41,38 @@
     }
   },
   "commsRating": {
-    "Very poorly": 2,
+    "Very poorly": 0,
     "Poorly": 0,
     "Neutral": 0,
     "Well": 0,
     "Very well": 0
   },
   "concernsTopLine": {
-    "Yes": 2,
+    "Yes": 0,
     "No": 0
   },
-  "concernsBreakdown": {
-    "Impact on attention span and focus": 2,
-    "Impact on social skills and peer interaction": 2,
-    "Exposure to inappropriate content despite school filters": 2,
-    "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
-    "Data privacy and security": 1,
-    "School devices undermining family screen time rules at home": 1,
-    "Eye strain or physical health effects": 1
-  },
+  "concernsBreakdown": {},
   "concernsByGradeBand": {
     "K-2": {
       "topLine": {
-        "Yes": 2,
+        "Yes": 0,
         "No": 0
       },
-      "breakdown": {
-        "Impact on attention span and focus": 2,
-        "Impact on social skills and peer interaction": 2,
-        "Exposure to inappropriate content despite school filters": 2,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
-        "Data privacy and security": 1,
-        "School devices undermining family screen time rules at home": 1,
-        "Eye strain or physical health effects": 1
-      }
+      "breakdown": {}
     },
     "3-5": {
       "topLine": {
-        "Yes": 2,
+        "Yes": 0,
         "No": 0
       },
-      "breakdown": {
-        "Impact on attention span and focus": 2,
-        "Impact on social skills and peer interaction": 2,
-        "Exposure to inappropriate content despite school filters": 2,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
-        "Data privacy and security": 1,
-        "School devices undermining family screen time rules at home": 1,
-        "Eye strain or physical health effects": 1
-      }
+      "breakdown": {}
     },
     "6-8": {
       "topLine": {
-        "Yes": 1,
+        "Yes": 0,
         "No": 0
       },
-      "breakdown": {
-        "Impact on attention span and focus": 1,
-        "Impact on social skills and peer interaction": 1,
-        "Eye strain or physical health effects": 1,
-        "Exposure to inappropriate content despite school filters": 1,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 1
-      }
+      "breakdown": {}
     },
     "9-12": {
       "topLine": {
@@ -114,17 +82,7 @@
       "breakdown": {}
     }
   },
-  "policies": {
-    "Reconsider the 1:1 device model and return to shared devices in K-8": 2,
-    "Keep school devices at school in elementary, limit take-home in middle school": 2,
-    "Paper-and-pencil homework only for elementary school": 2,
-    "Prohibit recreational screen use during the school day": 2,
-    "Require explicit opt-in for generative AI tools": 2,
-    "Guarantee right to opt out of unproven EdTech and AI": 2,
-    "Parental access to student device activity": 2,
-    "Invest in teacher training and resources for non-digital instruction": 2,
-    "Parental consent for each data-collecting app or website": 1
-  },
+  "policies": {},
   "districts": [],
   "byDistrict": {},
   "bySchoolType": {},
