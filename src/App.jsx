@@ -11,24 +11,7 @@ import PolicyBreakdown from './components/PolicyBreakdown.jsx';
 import ParentVoices from './components/ParentVoices.jsx';
 import SchoolTypeComparison from './components/SchoolTypeComparison.jsx';
 
-const SPOTLIGHT_QUOTES = [
-  {
-    text: "My child comes home every day and tells me they spent most of class watching YouTube videos on their Chromebook. I didn't send them to school to watch videos — I sent them to learn.",
-    county: "Knox County",
-  },
-  {
-    text: "The school-issued device has completely undermined our rules at home. My son knows he can access anything on the school Chromebook that we've blocked on our home network. It feels like the school is working against us as parents.",
-    county: "Knox County",
-  },
-  {
-    text: "My daughter's handwriting has gotten so bad her doctor commented on it. She does everything on a screen now. There's no balance — it's screens for everything, all day long.",
-    county: "Knox County",
-  },
-  {
-    text: "I support technology in education when it's purposeful. But right now it feels like the devices are babysitters, not tools. Teachers are overwhelmed and screens fill the gaps.",
-    county: "Knox County",
-  },
-];
+const SPOTLIGHT_QUOTES = [];
 
 function pct(numerator, denominator) {
   if (!denominator) return 0;
@@ -233,7 +216,7 @@ export default function App() {
                 <ParentVoices
                   quotes={activeQuotes}
                   scoped={!!quotesScope}
-                  spotlights={!quotesScope ? SPOTLIGHT_QUOTES : null}
+                  spotlights={!quotesScope ? (data?.featuredQuotes?.length > 0 ? data.featuredQuotes : null) : null}
                 />
               </section>
             )}
