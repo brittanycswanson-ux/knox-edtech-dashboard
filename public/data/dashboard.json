@@ -1,8 +1,9 @@
 {
-  "generated": "2026-05-25T00:27:07.132Z",
+  "generated": "2026-05-25T00:32:34.881Z",
   "totalResponses": 6,
   "byCounty": {
-    "District 4": 4
+    "District 4": 4,
+    "District 6": 2
   },
   "anyTooMuch": 6,
   "screenTimeSentiment": {
@@ -132,7 +133,8 @@
     "Parental consent for each data-collecting app or website": 2
   },
   "districts": [
-    "District 4"
+    "District 4",
+    "District 6"
   ],
   "byDistrict": {
     "District 4": {
@@ -266,6 +268,129 @@
         "Invest in teacher training and resources for non-digital instruction": 2,
         "Parental consent for each data-collecting app or website": 1
       }
+    },
+    "District 6": {
+      "totalResponses": 2,
+      "byCounty": {
+        "District 6": 2
+      },
+      "screenTimeSentiment": {
+        "Too much": 4,
+        "Just right": 0,
+        "Not enough": 0,
+        "No opinion": 0,
+        "I don't know": 0
+      },
+      "anyTooMuch": 2,
+      "byGradeBand": {
+        "K-2": {
+          "Too much": 1,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        },
+        "3-5": {
+          "Too much": 2,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        },
+        "6-8": {
+          "Too much": 1,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        },
+        "9-12": {
+          "Too much": 0,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        }
+      },
+      "commsRating": {
+        "Very poorly": 0,
+        "Poorly": 1,
+        "Neutral": 1,
+        "Well": 0,
+        "Very well": 0
+      },
+      "concernsTopLine": {
+        "Yes": 2,
+        "No": 0
+      },
+      "concernsBreakdown": {
+        "Impact on attention span and focus": 2,
+        "Impact on social skills and peer interaction": 2,
+        "Eye strain or physical health effects": 2,
+        "Exposure to inappropriate content despite school filters": 2,
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
+        "School devices undermining family screen time rules at home": 1
+      },
+      "concernsByGradeBand": {
+        "K-2": {
+          "topLine": {
+            "Yes": 1,
+            "No": 0
+          },
+          "breakdown": {
+            "Impact on attention span and focus": 1,
+            "Impact on social skills and peer interaction": 1,
+            "Eye strain or physical health effects": 1,
+            "Exposure to inappropriate content despite school filters": 1,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 1
+          }
+        },
+        "3-5": {
+          "topLine": {
+            "Yes": 2,
+            "No": 0
+          },
+          "breakdown": {
+            "Impact on attention span and focus": 2,
+            "Impact on social skills and peer interaction": 2,
+            "Eye strain or physical health effects": 2,
+            "Exposure to inappropriate content despite school filters": 2,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 2,
+            "School devices undermining family screen time rules at home": 1
+          }
+        },
+        "6-8": {
+          "topLine": {
+            "Yes": 1,
+            "No": 0
+          },
+          "breakdown": {
+            "Impact on attention span and focus": 1,
+            "Impact on social skills and peer interaction": 1,
+            "Eye strain or physical health effects": 1,
+            "Exposure to inappropriate content despite school filters": 1,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 1,
+            "School devices undermining family screen time rules at home": 1
+          }
+        },
+        "9-12": {
+          "topLine": {
+            "Yes": 0,
+            "No": 0
+          },
+          "breakdown": {}
+        }
+      },
+      "policies": {
+        "Reconsider the 1:1 device model and return to shared devices in K-8": 2,
+        "Paper-and-pencil homework only for elementary school": 2,
+        "Prohibit recreational screen use during the school day": 2,
+        "Invest in teacher training and resources for non-digital instruction": 2,
+        "Keep school devices at school in elementary, limit take-home in middle school": 1,
+        "Require explicit opt-in for generative AI tools": 1,
+        "Parental consent for each data-collecting app or website": 1,
+        "Parental access to student device activity": 1
+      }
     }
   },
   "bySchoolType": {},
@@ -276,7 +401,7 @@
     },
     {
       "text": "My son is finishing fast to just play games like prodigy . He doesn’t work of handwriting at all!! Bring play back",
-      "county": null
+      "county": "District 6"
     }
   ],
   "quotesByCounty": {
@@ -285,6 +410,12 @@
         "text": "They are addictive, kids play non educational games on them all day. They cause too much distraction and do not add value.",
         "county": "District 4"
       }
+    ],
+    "District 6": [
+      {
+        "text": "My son is finishing fast to just play games like prodigy . He doesn’t work of handwriting at all!! Bring play back",
+        "county": "District 6"
+      }
     ]
   },
   "quotesByDistrict": {
@@ -292,6 +423,12 @@
       {
         "text": "They are addictive, kids play non educational games on them all day. They cause too much distraction and do not add value.",
         "county": "District 4"
+      }
+    ],
+    "District 6": [
+      {
+        "text": "My son is finishing fast to just play games like prodigy . He doesn’t work of handwriting at all!! Bring play back",
+        "county": "District 6"
       }
     ]
   }
