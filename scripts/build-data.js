@@ -267,7 +267,7 @@ async function main() {
       aggregateRow(byDistrict[district], row, getCell);
     }
 
-    const detail = getCell(row, 'concernDetails');
+   const detail = getCell(row, 'concernDetails');
     if (detail) {
       const isFullLength = NO_TRUNCATE_QUOTES.some(s => detail.includes(s));
       let truncated = isFullLength ? detail.trim() : truncateQuote(detail);
@@ -278,27 +278,26 @@ async function main() {
       }
       if (EXCLUDE_QUOTES.some(ex => truncated.includes(ex))) continue;
       const score = scoreQuote(truncated);
+      const districtLabel = district ? `Knox County ${district} Parent` : 'Knox County Parent';
       if (isFullLength) {
-        quotePool.push({ text: truncated, county: getCell(row, 'county') || null, district: district || null, score: 999, wide: true });
+        quotePool.push({ text: truncated, county: districtLabel, district: district || null, score: 999, wide: true });
       } else if (score > 0) {
-        quotePool.push({ text: truncated, county: getCell(row, 'county') || null, district: district || null, score });
+        quotePool.push({ text: truncated, county: districtLabel, district: district || null, score });
       }
     }
-  }
 
   quotePool.sort((a, b) => b.score - a.score);
 
   // Featured quotes — replace these with real Knox County responses once survey data comes in
- const featuredQuotes = quotePool
-  .filter(q => {
-    const row = dataRows.find(r => {
-      const detail = getCell(r, 'concernDetails');
-      return detail && q.text.startsWith(detail.trim().slice(0, 40));
-    });
-    if (!row) return false;
-    return getCell(row, 'featuredQuote') === 'Yes';
+const featuredQuotes = dataRows
+  .filter(row => getCell(row, 'featuredQuote') === 'Yes')
+  .map(row => {
+    const detail = getCell(row, 'concernDetails') || getCell(row, 'harmStory');
+    const dist = getCell(row, 'district') || getCell(row, 'county');
+    const label = dist ? `Knox County ${dist} Parent` : 'Knox County Parent';
+    return detail ? { text: truncateQuote(detail), county: label } : null;
   })
-  .map(q => ({ text: q.text, county: q.district || q.county }));
+  .filter(Boolean);
 
   console.log(`Quote pool: ${quotePool.length} scored, using ${featuredQuotes.length} featured quotes`);
 
