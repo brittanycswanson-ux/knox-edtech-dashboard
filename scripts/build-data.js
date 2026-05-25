@@ -285,6 +285,7 @@ async function main() {
         quotePool.push({ text: truncated, county: districtLabel, district: district || null, score });
       }
     }
+  }
 
   quotePool.sort((a, b) => b.score - a.score);
 
