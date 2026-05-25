@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-25T01:06:31.270Z",
+  "generated": "2026-05-25T01:16:27.691Z",
   "totalResponses": 12,
   "byCounty": {
-    "District 4": 9,
+    "District 4": 10,
     "District 6": 2
   },
   "anyTooMuch": 12,
@@ -138,21 +138,21 @@
   ],
   "byDistrict": {
     "District 4": {
-      "totalResponses": 9,
+      "totalResponses": 10,
       "byCounty": {
-        "District 4": 9
+        "District 4": 10
       },
       "screenTimeSentiment": {
-        "Too much": 16,
+        "Too much": 17,
         "Just right": 0,
         "Not enough": 0,
         "No opinion": 0,
         "I don't know": 0
       },
-      "anyTooMuch": 9,
+      "anyTooMuch": 10,
       "byGradeBand": {
         "K-2": {
-          "Too much": 7,
+          "Too much": 8,
           "Just right": 0,
           "Not enough": 0,
           "No opinion": 0,
@@ -181,37 +181,37 @@
         }
       },
       "commsRating": {
-        "Very poorly": 6,
+        "Very poorly": 7,
         "Poorly": 2,
         "Neutral": 1,
         "Well": 0,
         "Very well": 0
       },
       "concernsTopLine": {
-        "Yes": 9,
+        "Yes": 10,
         "No": 0
       },
       "concernsBreakdown": {
-        "Impact on attention span and focus": 9,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 9,
-        "Exposure to inappropriate content despite school filters": 8,
-        "Impact on social skills and peer interaction": 7,
-        "School devices undermining family screen time rules at home": 6,
+        "Impact on attention span and focus": 10,
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 10,
+        "Exposure to inappropriate content despite school filters": 9,
+        "Impact on social skills and peer interaction": 8,
+        "School devices undermining family screen time rules at home": 7,
         "Eye strain or physical health effects": 5,
         "Data privacy and security": 3
       },
       "concernsByGradeBand": {
         "K-2": {
           "topLine": {
-            "Yes": 7,
+            "Yes": 8,
             "No": 0
           },
           "breakdown": {
-            "Impact on attention span and focus": 7,
-            "Exposure to inappropriate content despite school filters": 7,
-            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 7,
-            "Impact on social skills and peer interaction": 5,
-            "School devices undermining family screen time rules at home": 5,
+            "Impact on attention span and focus": 8,
+            "Exposure to inappropriate content despite school filters": 8,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 8,
+            "Impact on social skills and peer interaction": 6,
+            "School devices undermining family screen time rules at home": 6,
             "Data privacy and security": 3,
             "Eye strain or physical health effects": 3
           }
@@ -259,15 +259,15 @@
         }
       },
       "policies": {
-        "Paper-and-pencil homework only for elementary school": 8,
-        "Keep school devices at school in elementary, limit take-home in middle school": 7,
-        "Prohibit recreational screen use during the school day": 7,
+        "Paper-and-pencil homework only for elementary school": 9,
+        "Keep school devices at school in elementary, limit take-home in middle school": 8,
+        "Prohibit recreational screen use during the school day": 8,
+        "Reconsider the 1:1 device model and return to shared devices in K-8": 7,
+        "Require explicit opt-in for generative AI tools": 7,
+        "Guarantee right to opt out of unproven EdTech and AI": 7,
         "Parental access to student device activity": 7,
-        "Reconsider the 1:1 device model and return to shared devices in K-8": 6,
-        "Require explicit opt-in for generative AI tools": 6,
-        "Guarantee right to opt out of unproven EdTech and AI": 6,
-        "Invest in teacher training and resources for non-digital instruction": 6,
-        "Parental consent for each data-collecting app or website": 4
+        "Invest in teacher training and resources for non-digital instruction": 7,
+        "Parental consent for each data-collecting app or website": 5
       }
     },
     "District 6": {
@@ -416,7 +416,7 @@
         "county": "Knox County District 4 Parent"
       },
       {
-        "text": "Shoes and movies being played without parents consent on screens very frequently.",
+        "text": "Shows and movies being played without parents consent on screens very frequently.",
         "county": "Knox County District 4 Parent"
       }
     ],
@@ -438,7 +438,7 @@
         "county": "Knox County District 4 Parent"
       },
       {
-        "text": "Shoes and movies being played without parents consent on screens very frequently.",
+        "text": "Shows and movies being played without parents consent on screens very frequently.",
         "county": "Knox County District 4 Parent"
       }
     ],
