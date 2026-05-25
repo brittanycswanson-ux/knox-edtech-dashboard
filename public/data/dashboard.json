@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-24T22:38:00.572Z",
+  "generated": "2026-05-25T00:27:07.132Z",
   "totalResponses": 6,
   "byCounty": {
     "District 4": 4
@@ -269,7 +269,16 @@
     }
   },
   "bySchoolType": {},
-  "featuredQuotes": [],
+  "featuredQuotes": [
+    {
+      "text": "They are addictive, kids play non educational games on them all day. They cause too much distraction and do not add value.",
+      "county": "District 4"
+    },
+    {
+      "text": "My son is finishing fast to just play games like prodigy . He doesn’t work of handwriting at all!! Bring play back",
+      "county": null
+    }
+  ],
   "quotesByCounty": {
     "District 4": [
       {
