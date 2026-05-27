@@ -1,15 +1,15 @@
 {
-  "generated": "2026-05-26T22:58:10.994Z",
-  "totalResponses": 22,
+  "generated": "2026-05-27T18:08:26.869Z",
+  "totalResponses": 23,
   "byCounty": {
-    "District 4": 18,
+    "District 4": 19,
     "District 6": 2,
     "District 2": 1,
     "District 1": 1
   },
-  "anyTooMuch": 22,
+  "anyTooMuch": 23,
   "screenTimeSentiment": {
-    "Too much": 38,
+    "Too much": 41,
     "Just right": 0,
     "Not enough": 0,
     "No opinion": 0,
@@ -17,21 +17,21 @@
   },
   "byGradeBand": {
     "K-2": {
-      "Too much": 19,
+      "Too much": 20,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
       "I don't know": 0
     },
     "3-5": {
-      "Too much": 15,
+      "Too much": 16,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
       "I don't know": 0
     },
     "6-8": {
-      "Too much": 3,
+      "Too much": 4,
       "Just right": 0,
       "Not enough": 0,
       "No opinion": 0,
@@ -48,13 +48,13 @@
   "commsRating": {
     "Very poorly": 13,
     "Poorly": 5,
-    "Neutral": 4,
+    "Neutral": 5,
     "Well": 0,
     "Very well": 0
   },
   "concernsTopLine": {
     "Yes": 22,
-    "No": 0
+    "No": 1
   },
   "concernsBreakdown": {
     "Impact on attention span and focus": 21,
@@ -69,7 +69,7 @@
     "K-2": {
       "topLine": {
         "Yes": 19,
-        "No": 0
+        "No": 1
       },
       "breakdown": {
         "Impact on attention span and focus": 18,
@@ -84,7 +84,7 @@
     "3-5": {
       "topLine": {
         "Yes": 15,
-        "No": 0
+        "No": 1
       },
       "breakdown": {
         "Impact on attention span and focus": 14,
@@ -99,7 +99,7 @@
     "6-8": {
       "topLine": {
         "Yes": 3,
-        "No": 0
+        "No": 1
       },
       "breakdown": {
         "Impact on attention span and focus": 3,
@@ -124,14 +124,14 @@
     }
   },
   "policies": {
-    "Paper-and-pencil homework only for elementary school": 20,
+    "Paper-and-pencil homework only for elementary school": 21,
     "Prohibit recreational screen use during the school day": 18,
     "Parental access to student device activity": 16,
+    "Invest in teacher training and resources for non-digital instruction": 16,
     "Reconsider the 1:1 device model and return to shared devices in K-8": 15,
     "Require explicit opt-in for generative AI tools": 15,
-    "Invest in teacher training and resources for non-digital instruction": 15,
+    "Keep school devices at school in elementary, limit take-home in middle school": 14,
     "Guarantee right to opt out of unproven EdTech and AI": 14,
-    "Keep school devices at school in elementary, limit take-home in middle school": 13,
     "Parental consent for each data-collecting app or website": 13
   },
   "districts": [
@@ -142,35 +142,35 @@
   ],
   "byDistrict": {
     "District 4": {
-      "totalResponses": 18,
+      "totalResponses": 19,
       "byCounty": {
-        "District 4": 18
+        "District 4": 19
       },
       "screenTimeSentiment": {
-        "Too much": 30,
+        "Too much": 33,
         "Just right": 0,
         "Not enough": 0,
         "No opinion": 0,
         "I don't know": 0
       },
-      "anyTooMuch": 18,
+      "anyTooMuch": 19,
       "byGradeBand": {
         "K-2": {
-          "Too much": 16,
+          "Too much": 17,
           "Just right": 0,
           "Not enough": 0,
           "No opinion": 0,
           "I don't know": 0
         },
         "3-5": {
-          "Too much": 11,
+          "Too much": 12,
           "Just right": 0,
           "Not enough": 0,
           "No opinion": 0,
           "I don't know": 0
         },
         "6-8": {
-          "Too much": 2,
+          "Too much": 3,
           "Just right": 0,
           "Not enough": 0,
           "No opinion": 0,
@@ -187,13 +187,13 @@
       "commsRating": {
         "Very poorly": 11,
         "Poorly": 4,
-        "Neutral": 3,
+        "Neutral": 4,
         "Well": 0,
         "Very well": 0
       },
       "concernsTopLine": {
         "Yes": 18,
-        "No": 0
+        "No": 1
       },
       "concernsBreakdown": {
         "Impact on attention span and focus": 17,
@@ -208,7 +208,7 @@
         "K-2": {
           "topLine": {
             "Yes": 16,
-            "No": 0
+            "No": 1
           },
           "breakdown": {
             "Impact on attention span and focus": 15,
@@ -223,7 +223,7 @@
         "3-5": {
           "topLine": {
             "Yes": 11,
-            "No": 0
+            "No": 1
           },
           "breakdown": {
             "Impact on attention span and focus": 10,
@@ -238,7 +238,7 @@
         "6-8": {
           "topLine": {
             "Yes": 2,
-            "No": 0
+            "No": 1
           },
           "breakdown": {
             "Impact on attention span and focus": 2,
@@ -263,14 +263,14 @@
         }
       },
       "policies": {
-        "Paper-and-pencil homework only for elementary school": 16,
+        "Paper-and-pencil homework only for elementary school": 17,
         "Prohibit recreational screen use during the school day": 14,
         "Parental access to student device activity": 14,
+        "Invest in teacher training and resources for non-digital instruction": 13,
         "Reconsider the 1:1 device model and return to shared devices in K-8": 12,
+        "Keep school devices at school in elementary, limit take-home in middle school": 12,
         "Require explicit opt-in for generative AI tools": 12,
         "Guarantee right to opt out of unproven EdTech and AI": 12,
-        "Invest in teacher training and resources for non-digital instruction": 12,
-        "Keep school devices at school in elementary, limit take-home in middle school": 11,
         "Parental consent for each data-collecting app or website": 10
       }
     },
