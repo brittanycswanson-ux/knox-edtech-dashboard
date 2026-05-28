@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T20:07:30.304Z",
+  "generated": "2026-05-28T20:10:03.116Z",
   "totalResponses": 35,
   "byCounty": {
     "District 4": 30,
@@ -125,12 +125,12 @@
     }
   },
   "policies": {
-    "Eliminate devices in K-2": 13,
-    "Prohibit YouTube in all grades K-12": 13,
-    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 13,
-    "Require explicit opt-in for generative AI tools": 13,
-    "Guarantee right to opt out of unproven EdTech and AI": 13,
-    "Reconsider the 1:1 device model and return to shared devices in 3-5": 7,
+    "Eliminate devices in K-2": 24,
+    "Prohibit YouTube in all grades K-12": 24,
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 24,
+    "Require explicit opt-in for generative AI tools": 24,
+    "Guarantee right to opt out of unproven EdTech and AI": 24,
+    "Reconsider the 1:1 device model and return to shared devices in 3-5": 18,
     "Reconsider the 1:1 device model and return to shared devices in 6-8": 6,
     "Paper-and-pencil homework only for elementary school": 6,
     "Paper-and-pencil homework only for middle school": 6,
@@ -267,12 +267,12 @@
         }
       },
       "policies": {
-        "Eliminate devices in K-2": 12,
-        "Prohibit YouTube in all grades K-12": 12,
-        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 12,
-        "Require explicit opt-in for generative AI tools": 12,
-        "Guarantee right to opt out of unproven EdTech and AI": 12,
-        "Reconsider the 1:1 device model and return to shared devices in 3-5": 7,
+        "Eliminate devices in K-2": 22,
+        "Prohibit YouTube in all grades K-12": 22,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 22,
+        "Require explicit opt-in for generative AI tools": 22,
+        "Guarantee right to opt out of unproven EdTech and AI": 22,
+        "Reconsider the 1:1 device model and return to shared devices in 3-5": 17,
         "Reconsider the 1:1 device model and return to shared devices in 6-8": 5,
         "Paper-and-pencil homework only for elementary school": 5,
         "Paper-and-pencil homework only for middle school": 5,
@@ -393,16 +393,17 @@
         }
       },
       "policies": {
-        "Eliminate devices in K-2": 1,
+        "Eliminate devices in K-2": 2,
+        "Prohibit YouTube in all grades K-12": 2,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 2,
+        "Require explicit opt-in for generative AI tools": 2,
+        "Guarantee right to opt out of unproven EdTech and AI": 2,
         "Reconsider the 1:1 device model and return to shared devices in 6-8": 1,
         "Paper-and-pencil homework only for elementary school": 1,
         "Paper-and-pencil homework only for middle school": 1,
-        "Prohibit YouTube in all grades K-12": 1,
         "Parental access to student device activity": 1,
-        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 1,
-        "Require explicit opt-in for generative AI tools": 1,
-        "Guarantee right to opt out of unproven EdTech and AI": 1,
-        "Parental consent for each data-collecting app or website": 1
+        "Parental consent for each data-collecting app or website": 1,
+        "Reconsider the 1:1 device model and return to shared devices in 3-5": 1
       }
     },
     "District 2": {
