@@ -38,6 +38,9 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update survey data $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
-            git push
+git fetch origin main
+          git checkout origin/main -- public/data/dashboard.json || true
+          git add public/data/dashboard.json
+          git commit --amend --no-edit || true
+          git push --force-with-lease
           fi
