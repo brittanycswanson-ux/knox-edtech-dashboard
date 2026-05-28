@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T19:55:17.755Z",
+  "generated": "2026-05-28T20:00:18.438Z",
   "totalResponses": 35,
   "byCounty": {
     "District 4": 30,
@@ -125,17 +125,17 @@
     }
   },
   "policies": {
-    "Paper-and-pencil homework only for elementary school": 32,
-    "Parental access to student device activity": 26,
-    "Require explicit opt-in for generative AI tools": 24,
-    "Paper-and-pencil homework only for middle school": 23,
-    "Parental consent for each data-collecting app or website": 23,
-    "Guarantee right to opt out of unproven EdTech and AI": 21,
-    "Eliminate devices in K-2": 2,
-    "Prohibit YouTube in all grades K-12": 2,
-    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 2,
-    "Reconsider the 1:1 device model and return to shared devices in 3-5": 1,
-    "Reconsider the 1:1 device model and return to shared devices in 6-8": 1
+    "Eliminate devices in K-2": 7,
+    "Prohibit YouTube in all grades K-12": 7,
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 7,
+    "Require explicit opt-in for generative AI tools": 7,
+    "Guarantee right to opt out of unproven EdTech and AI": 7,
+    "Reconsider the 1:1 device model and return to shared devices in 6-8": 6,
+    "Paper-and-pencil homework only for elementary school": 6,
+    "Paper-and-pencil homework only for middle school": 6,
+    "Parental access to student device activity": 6,
+    "Parental consent for each data-collecting app or website": 6,
+    "Reconsider the 1:1 device model and return to shared devices in 3-5": 1
   },
   "districts": [
     "District 4",
@@ -267,17 +267,17 @@
         }
       },
       "policies": {
-        "Paper-and-pencil homework only for elementary school": 27,
-        "Parental access to student device activity": 23,
-        "Require explicit opt-in for generative AI tools": 21,
-        "Parental consent for each data-collecting app or website": 20,
-        "Guarantee right to opt out of unproven EdTech and AI": 19,
-        "Paper-and-pencil homework only for middle school": 18,
-        "Eliminate devices in K-2": 2,
-        "Prohibit YouTube in all grades K-12": 2,
-        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 2,
-        "Reconsider the 1:1 device model and return to shared devices in 3-5": 1,
-        "Reconsider the 1:1 device model and return to shared devices in 6-8": 1
+        "Eliminate devices in K-2": 6,
+        "Prohibit YouTube in all grades K-12": 6,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 6,
+        "Require explicit opt-in for generative AI tools": 6,
+        "Guarantee right to opt out of unproven EdTech and AI": 6,
+        "Reconsider the 1:1 device model and return to shared devices in 6-8": 5,
+        "Paper-and-pencil homework only for elementary school": 5,
+        "Paper-and-pencil homework only for middle school": 5,
+        "Parental access to student device activity": 5,
+        "Parental consent for each data-collecting app or website": 5,
+        "Reconsider the 1:1 device model and return to shared devices in 3-5": 1
       }
     },
     "District 6": {
@@ -393,10 +393,15 @@
         }
       },
       "policies": {
-        "Paper-and-pencil homework only for elementary school": 2,
-        "Paper-and-pencil homework only for middle school": 2,
-        "Require explicit opt-in for generative AI tools": 1,
+        "Eliminate devices in K-2": 1,
+        "Reconsider the 1:1 device model and return to shared devices in 6-8": 1,
+        "Paper-and-pencil homework only for elementary school": 1,
+        "Paper-and-pencil homework only for middle school": 1,
+        "Prohibit YouTube in all grades K-12": 1,
         "Parental access to student device activity": 1,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 1,
+        "Require explicit opt-in for generative AI tools": 1,
+        "Guarantee right to opt out of unproven EdTech and AI": 1,
         "Parental consent for each data-collecting app or website": 1
       }
     },
@@ -509,14 +514,7 @@
           "breakdown": {}
         }
       },
-      "policies": {
-        "Paper-and-pencil homework only for elementary school": 1,
-        "Paper-and-pencil homework only for middle school": 1,
-        "Parental access to student device activity": 1,
-        "Require explicit opt-in for generative AI tools": 1,
-        "Guarantee right to opt out of unproven EdTech and AI": 1,
-        "Parental consent for each data-collecting app or website": 1
-      }
+      "policies": {}
     },
     "District 1": {
       "totalResponses": 1,
@@ -618,13 +616,7 @@
           "breakdown": {}
         }
       },
-      "policies": {
-        "Paper-and-pencil homework only for elementary school": 1,
-        "Paper-and-pencil homework only for middle school": 1,
-        "Require explicit opt-in for generative AI tools": 1,
-        "Guarantee right to opt out of unproven EdTech and AI": 1,
-        "Parental consent for each data-collecting app or website": 1
-      }
+      "policies": {}
     },
     "District 5": {
       "totalResponses": 1,
@@ -725,11 +717,7 @@
           "breakdown": {}
         }
       },
-      "policies": {
-        "Paper-and-pencil homework only for elementary school": 1,
-        "Paper-and-pencil homework only for middle school": 1,
-        "Parental access to student device activity": 1
-      }
+      "policies": {}
     }
   },
   "bySchoolType": {},
