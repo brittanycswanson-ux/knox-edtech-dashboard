@@ -46,16 +46,18 @@
     "Other"
   ],
   "policyOptions": [
-    "Reconsider the 1:1 device model and return to shared devices in K-8",
-    "Keep school devices at school in elementary, limit take-home in middle school",
+    "Eliminate devices in K-2",
+    "Reconsider the 1:1 device model and return to shared devices in 3-5",
+    "Reconsider the 1:1 device model and return to shared devices in 6-8",
     "Paper-and-pencil homework only for elementary school",
-    "Prohibit recreational screen use during the school day",
+    "Paper-and-pencil homework only for middle school",
+    "Prohibit YouTube in all grades K-12",
+    "Parental access to student device activity",
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement",
     "Require explicit opt-in for generative AI tools",
     "Guarantee right to opt out of unproven EdTech and AI",
     "Parental consent for each data-collecting app or website",
-    "Parental access to student device activity",
-    "Invest in teacher training and resources for non-digital instruction",
-    "Other"
+    "Other",
   ],
   "geography": {
     "label": "School District",
