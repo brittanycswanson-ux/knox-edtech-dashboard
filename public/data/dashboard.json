@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T20:00:18.438Z",
+  "generated": "2026-05-28T20:07:30.304Z",
   "totalResponses": 35,
   "byCounty": {
     "District 4": 30,
@@ -125,17 +125,17 @@
     }
   },
   "policies": {
-    "Eliminate devices in K-2": 7,
-    "Prohibit YouTube in all grades K-12": 7,
-    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 7,
-    "Require explicit opt-in for generative AI tools": 7,
-    "Guarantee right to opt out of unproven EdTech and AI": 7,
+    "Eliminate devices in K-2": 13,
+    "Prohibit YouTube in all grades K-12": 13,
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 13,
+    "Require explicit opt-in for generative AI tools": 13,
+    "Guarantee right to opt out of unproven EdTech and AI": 13,
+    "Reconsider the 1:1 device model and return to shared devices in 3-5": 7,
     "Reconsider the 1:1 device model and return to shared devices in 6-8": 6,
     "Paper-and-pencil homework only for elementary school": 6,
     "Paper-and-pencil homework only for middle school": 6,
     "Parental access to student device activity": 6,
-    "Parental consent for each data-collecting app or website": 6,
-    "Reconsider the 1:1 device model and return to shared devices in 3-5": 1
+    "Parental consent for each data-collecting app or website": 6
   },
   "districts": [
     "District 4",
@@ -267,17 +267,17 @@
         }
       },
       "policies": {
-        "Eliminate devices in K-2": 6,
-        "Prohibit YouTube in all grades K-12": 6,
-        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 6,
-        "Require explicit opt-in for generative AI tools": 6,
-        "Guarantee right to opt out of unproven EdTech and AI": 6,
+        "Eliminate devices in K-2": 12,
+        "Prohibit YouTube in all grades K-12": 12,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 12,
+        "Require explicit opt-in for generative AI tools": 12,
+        "Guarantee right to opt out of unproven EdTech and AI": 12,
+        "Reconsider the 1:1 device model and return to shared devices in 3-5": 7,
         "Reconsider the 1:1 device model and return to shared devices in 6-8": 5,
         "Paper-and-pencil homework only for elementary school": 5,
         "Paper-and-pencil homework only for middle school": 5,
         "Parental access to student device activity": 5,
-        "Parental consent for each data-collecting app or website": 5,
-        "Reconsider the 1:1 device model and return to shared devices in 3-5": 1
+        "Parental consent for each data-collecting app or website": 5
       }
     },
     "District 6": {
@@ -739,16 +739,8 @@
       "county": "Knox County District 4 Parent"
     },
     {
-      "text": "My children were both able to access the adult YouTube at school. We do not allow them to watch YouTube at home and monitor all screen use strictly. They also use Chromebooks for indoor recess and centers. There is also no communication about tv shows that are shown and how often- and tv shows were shown very frequently.",
-      "county": "Knox County District 4 Parent"
-    },
-    {
       "text": "I’d like to be able to access my child’s screen time per week and history",
       "county": "Knox County District 4 Parent"
-    },
-    {
-      "text": "Excessive screen time reducing physical activity and face-to-face interaction\nPrivacy and data security concerns involving student information\nCyberbullying and inappropriate online behavior among students\nOverreliance on technology limiting development of critical thinking and handwriting skills\nExposure to inappropriate or unreliable online…",
-      "county": "Knox County District 2 Parent"
     },
     {
       "text": "Screens seem to be used as a babysitter. My child in 4th grade did not get to play on the playground from Christmas break to the end of March because the teachers thought it was too cold and they had them sit inside on screens instead (not technically too cold to be outside per policy)",
