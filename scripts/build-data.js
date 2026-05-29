@@ -296,7 +296,7 @@ const featuredQuotes = dataRows
     const detail = getCell(row, 'concernDetails') || getCell(row, 'harmStory');
     const dist = getCell(row, 'district') || getCell(row, 'county');
     const label = dist ? `Knox County ${dist} Parent` : 'Knox County Parent';
-    return detail ? { text: truncateQuote(detail), county: label } : null;
+    return detail ? { text: detail.trim(), county: label } : null;
   })
   .filter(Boolean);
 
