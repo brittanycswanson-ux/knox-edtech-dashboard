@@ -1,21 +1,21 @@
 {
-  "generated": "2026-06-03T18:12:58.038Z",
-  "totalResponses": 231,
+  "generated": "2026-06-03T20:04:35.822Z",
+  "totalResponses": 232,
   "byCounty": {
     "District 4": 111,
     "District 5": 49,
     "District 7": 12,
     "District 1": 10,
     "District 6": 8,
+    "District 2": 8,
     "District 3": 8,
-    "District 2": 7,
     "District 8": 7,
     "District 9": 1,
     "Other - please specify": 1
   },
-  "anyTooMuch": 204,
+  "anyTooMuch": 205,
   "screenTimeSentiment": {
-    "Too much": 326,
+    "Too much": 327,
     "Just right": 30,
     "Not enough": 0,
     "No opinion": 1,
@@ -23,7 +23,7 @@
   },
   "byGradeBand": {
     "K-2": {
-      "Too much": 154,
+      "Too much": 155,
       "Just right": 16,
       "Not enough": 0,
       "No opinion": 1,
@@ -52,39 +52,39 @@
     }
   },
   "commsRating": {
-    "Very poorly": 79,
+    "Very poorly": 80,
     "Poorly": 76,
     "Neutral": 68,
     "Well": 7,
     "Very well": 1
   },
   "concernsTopLine": {
-    "Yes": 210,
+    "Yes": 211,
     "No": 21
   },
   "concernsBreakdown": {
-    "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 196,
-    "Impact on attention span and focus": 182,
-    "Impact on social skills and peer interaction": 166,
-    "Exposure to inappropriate content despite school filters": 159,
-    "Eye strain or physical health effects": 121,
-    "School devices undermining family screen time rules at home": 108,
-    "Data privacy and security": 76
+    "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 197,
+    "Impact on attention span and focus": 183,
+    "Impact on social skills and peer interaction": 167,
+    "Exposure to inappropriate content despite school filters": 160,
+    "Eye strain or physical health effects": 122,
+    "School devices undermining family screen time rules at home": 109,
+    "Data privacy and security": 77
   },
   "concernsByGradeBand": {
     "K-2": {
       "topLine": {
-        "Yes": 165,
+        "Yes": 166,
         "No": 17
       },
       "breakdown": {
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 152,
-        "Impact on attention span and focus": 142,
-        "Impact on social skills and peer interaction": 132,
-        "Exposure to inappropriate content despite school filters": 127,
-        "Eye strain or physical health effects": 89,
-        "School devices undermining family screen time rules at home": 82,
-        "Data privacy and security": 56
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 153,
+        "Impact on attention span and focus": 143,
+        "Impact on social skills and peer interaction": 133,
+        "Exposure to inappropriate content despite school filters": 128,
+        "Eye strain or physical health effects": 90,
+        "School devices undermining family screen time rules at home": 83,
+        "Data privacy and security": 57
       }
     },
     "3-5": {
@@ -134,13 +134,13 @@
     }
   },
   "policies": {
-    "Eliminate devices in K-2": 200,
-    "Prohibit YouTube in all grades K-12": 200,
-    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 191,
-    "Paper-and-pencil homework only for elementary school": 179,
-    "Require explicit opt-in for generative AI tools": 165,
-    "Parental access to student device activity": 159,
-    "Guarantee right to opt out of unproven EdTech and AI": 156,
+    "Eliminate devices in K-2": 201,
+    "Prohibit YouTube in all grades K-12": 201,
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 192,
+    "Paper-and-pencil homework only for elementary school": 180,
+    "Require explicit opt-in for generative AI tools": 166,
+    "Parental access to student device activity": 160,
+    "Guarantee right to opt out of unproven EdTech and AI": 157,
     "Reconsider the 1:1 device model and return to shared devices in 3-5": 144,
     "Parental consent for each data-collecting app or website": 134,
     "Reconsider the 1:1 device model and return to shared devices in 6-8": 98,
@@ -152,8 +152,8 @@
     "District 7",
     "District 1",
     "District 6",
-    "District 3",
     "District 2",
+    "District 3",
     "District 8",
     "District 9"
   ],
@@ -829,6 +829,136 @@
         "Paper-and-pencil homework only for middle school": 3
       }
     },
+    "District 2": {
+      "totalResponses": 8,
+      "byCounty": {
+        "District 2": 8
+      },
+      "screenTimeSentiment": {
+        "Too much": 12,
+        "Just right": 0,
+        "Not enough": 0,
+        "No opinion": 0,
+        "I don't know": 1
+      },
+      "anyTooMuch": 7,
+      "byGradeBand": {
+        "K-2": {
+          "Too much": 6,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 1
+        },
+        "3-5": {
+          "Too much": 5,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        },
+        "6-8": {
+          "Too much": 1,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        },
+        "9-12": {
+          "Too much": 0,
+          "Just right": 0,
+          "Not enough": 0,
+          "No opinion": 0,
+          "I don't know": 0
+        }
+      },
+      "commsRating": {
+        "Very poorly": 4,
+        "Poorly": 2,
+        "Neutral": 2,
+        "Well": 0,
+        "Very well": 0
+      },
+      "concernsTopLine": {
+        "Yes": 7,
+        "No": 1
+      },
+      "concernsBreakdown": {
+        "Impact on social skills and peer interaction": 7,
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 7,
+        "Impact on attention span and focus": 6,
+        "Eye strain or physical health effects": 5,
+        "Exposure to inappropriate content despite school filters": 5,
+        "Data privacy and security": 4,
+        "School devices undermining family screen time rules at home": 3
+      },
+      "concernsByGradeBand": {
+        "K-2": {
+          "topLine": {
+            "Yes": 6,
+            "No": 1
+          },
+          "breakdown": {
+            "Impact on social skills and peer interaction": 6,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 6,
+            "Impact on attention span and focus": 5,
+            "Eye strain or physical health effects": 4,
+            "Exposure to inappropriate content despite school filters": 4,
+            "Data privacy and security": 3,
+            "School devices undermining family screen time rules at home": 3
+          }
+        },
+        "3-5": {
+          "topLine": {
+            "Yes": 5,
+            "No": 0
+          },
+          "breakdown": {
+            "Impact on social skills and peer interaction": 5,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 5,
+            "Impact on attention span and focus": 4,
+            "Eye strain or physical health effects": 3,
+            "Exposure to inappropriate content despite school filters": 3,
+            "Data privacy and security": 2,
+            "School devices undermining family screen time rules at home": 2
+          }
+        },
+        "6-8": {
+          "topLine": {
+            "Yes": 1,
+            "No": 0
+          },
+          "breakdown": {
+            "Impact on attention span and focus": 1,
+            "Impact on social skills and peer interaction": 1,
+            "Eye strain or physical health effects": 1,
+            "Exposure to inappropriate content despite school filters": 1,
+            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 1,
+            "School devices undermining family screen time rules at home": 1
+          }
+        },
+        "9-12": {
+          "topLine": {
+            "Yes": 0,
+            "No": 0
+          },
+          "breakdown": {}
+        }
+      },
+      "policies": {
+        "Prohibit YouTube in all grades K-12": 7,
+        "Eliminate devices in K-2": 6,
+        "Paper-and-pencil homework only for elementary school": 6,
+        "Require explicit opt-in for generative AI tools": 6,
+        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 5,
+        "Guarantee right to opt out of unproven EdTech and AI": 5,
+        "Parental consent for each data-collecting app or website": 4,
+        "Parental access to student device activity": 4,
+        "Paper-and-pencil homework only for middle school": 3,
+        "Reconsider the 1:1 device model and return to shared devices in 3-5": 3,
+        "Reconsider the 1:1 device model and return to shared devices in 6-8": 1
+      }
+    },
     "District 3": {
       "totalResponses": 8,
       "byCounty": {
@@ -957,136 +1087,6 @@
         "Parental consent for each data-collecting app or website": 4,
         "Reconsider the 1:1 device model and return to shared devices in 3-5": 3,
         "Reconsider the 1:1 device model and return to shared devices in 6-8": 2
-      }
-    },
-    "District 2": {
-      "totalResponses": 7,
-      "byCounty": {
-        "District 2": 7
-      },
-      "screenTimeSentiment": {
-        "Too much": 11,
-        "Just right": 0,
-        "Not enough": 0,
-        "No opinion": 0,
-        "I don't know": 1
-      },
-      "anyTooMuch": 6,
-      "byGradeBand": {
-        "K-2": {
-          "Too much": 5,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 1
-        },
-        "3-5": {
-          "Too much": 5,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        },
-        "6-8": {
-          "Too much": 1,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        },
-        "9-12": {
-          "Too much": 0,
-          "Just right": 0,
-          "Not enough": 0,
-          "No opinion": 0,
-          "I don't know": 0
-        }
-      },
-      "commsRating": {
-        "Very poorly": 3,
-        "Poorly": 2,
-        "Neutral": 2,
-        "Well": 0,
-        "Very well": 0
-      },
-      "concernsTopLine": {
-        "Yes": 6,
-        "No": 1
-      },
-      "concernsBreakdown": {
-        "Impact on social skills and peer interaction": 6,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 6,
-        "Impact on attention span and focus": 5,
-        "Eye strain or physical health effects": 4,
-        "Exposure to inappropriate content despite school filters": 4,
-        "Data privacy and security": 3,
-        "School devices undermining family screen time rules at home": 2
-      },
-      "concernsByGradeBand": {
-        "K-2": {
-          "topLine": {
-            "Yes": 5,
-            "No": 1
-          },
-          "breakdown": {
-            "Impact on social skills and peer interaction": 5,
-            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 5,
-            "Impact on attention span and focus": 4,
-            "Eye strain or physical health effects": 3,
-            "Exposure to inappropriate content despite school filters": 3,
-            "Data privacy and security": 2,
-            "School devices undermining family screen time rules at home": 2
-          }
-        },
-        "3-5": {
-          "topLine": {
-            "Yes": 5,
-            "No": 0
-          },
-          "breakdown": {
-            "Impact on social skills and peer interaction": 5,
-            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 5,
-            "Impact on attention span and focus": 4,
-            "Eye strain or physical health effects": 3,
-            "Exposure to inappropriate content despite school filters": 3,
-            "Data privacy and security": 2,
-            "School devices undermining family screen time rules at home": 2
-          }
-        },
-        "6-8": {
-          "topLine": {
-            "Yes": 1,
-            "No": 0
-          },
-          "breakdown": {
-            "Impact on attention span and focus": 1,
-            "Impact on social skills and peer interaction": 1,
-            "Eye strain or physical health effects": 1,
-            "Exposure to inappropriate content despite school filters": 1,
-            "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 1,
-            "School devices undermining family screen time rules at home": 1
-          }
-        },
-        "9-12": {
-          "topLine": {
-            "Yes": 0,
-            "No": 0
-          },
-          "breakdown": {}
-        }
-      },
-      "policies": {
-        "Prohibit YouTube in all grades K-12": 6,
-        "Eliminate devices in K-2": 5,
-        "Paper-and-pencil homework only for elementary school": 5,
-        "Require explicit opt-in for generative AI tools": 5,
-        "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 4,
-        "Guarantee right to opt out of unproven EdTech and AI": 4,
-        "Parental consent for each data-collecting app or website": 4,
-        "Paper-and-pencil homework only for middle school": 3,
-        "Reconsider the 1:1 device model and return to shared devices in 3-5": 3,
-        "Parental access to student device activity": 3,
-        "Reconsider the 1:1 device model and return to shared devices in 6-8": 1
       }
     },
     "District 8": {
@@ -1376,6 +1376,10 @@
         "county": "Knox County District 2 Parent"
       },
       {
+        "text": "We have a huge amount of concern about all the aspects listed above. The day is excessive for Kindergarten students already and they need movement and hands on time and recess. Not screens.",
+        "county": "Knox County District 2 Parent"
+      },
+      {
         "text": "It seems to vary teachers to teacher how much time they have on computers. Like different teacher to teacher and that’s very frustrating to me.",
         "county": "Knox County District 2 Parent"
       }
@@ -1525,6 +1529,10 @@
       },
       {
         "text": "My biggest concern is that Chromebooks get used in place of peer interactions (like stations) Time where they can be working together independently but instead spend that time doing iready lessons.",
+        "county": "Knox County District 2 Parent"
+      },
+      {
+        "text": "We have a huge amount of concern about all the aspects listed above. The day is excessive for Kindergarten students already and they need movement and hands on time and recess. Not screens.",
         "county": "Knox County District 2 Parent"
       },
       {
