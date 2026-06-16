@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-16T12:05:43.484Z",
+  "generated": "2026-06-16T18:06:30.470Z",
   "totalResponses": 250,
   "byCounty": {
     "District 4": 121,
@@ -13,18 +13,18 @@
     "District 9": 1,
     "Other - please specify": 1
   },
-  "anyTooMuch": 223,
+  "anyTooMuch": 224,
   "screenTimeSentiment": {
-    "Too much": 356,
-    "Just right": 31,
+    "Too much": 357,
+    "Just right": 30,
     "Not enough": 0,
     "No opinion": 1,
     "I don't know": 22
   },
   "byGradeBand": {
     "K-2": {
-      "Too much": 166,
-      "Just right": 17,
+      "Too much": 167,
+      "Just right": 16,
       "Not enough": 0,
       "No opinion": 1,
       "I don't know": 11
@@ -441,17 +441,17 @@
         "District 7": 13
       },
       "screenTimeSentiment": {
-        "Too much": 15,
-        "Just right": 2,
+        "Too much": 16,
+        "Just right": 1,
         "Not enough": 0,
         "No opinion": 0,
         "I don't know": 2
       },
-      "anyTooMuch": 10,
+      "anyTooMuch": 11,
       "byGradeBand": {
         "K-2": {
-          "Too much": 7,
-          "Just right": 2,
+          "Too much": 8,
+          "Just right": 1,
           "Not enough": 0,
           "No opinion": 0,
           "I don't know": 2
