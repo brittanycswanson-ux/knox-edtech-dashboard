@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-22T17:42:20.513Z",
-  "totalResponses": 258,
+  "generated": "2026-06-22T21:30:33.485Z",
+  "totalResponses": 259,
   "byCounty": {
     "District 4": 122,
     "District 5": 51,
@@ -13,9 +13,9 @@
     "District 9": 2,
     "Other - please specify": 1
   },
-  "anyTooMuch": 232,
+  "anyTooMuch": 233,
   "screenTimeSentiment": {
-    "Too much": 365,
+    "Too much": 367,
     "Just right": 31,
     "Not enough": 0,
     "No opinion": 1,
@@ -37,14 +37,14 @@
       "I don't know": 4
     },
     "6-8": {
-      "Too much": 50,
+      "Too much": 51,
       "Just right": 2,
       "Not enough": 0,
       "No opinion": 0,
       "I don't know": 4
     },
     "9-12": {
-      "Too much": 12,
+      "Too much": 13,
       "Just right": 3,
       "Not enough": 0,
       "No opinion": 0,
@@ -54,20 +54,20 @@
   "commsRating": {
     "Very poorly": 85,
     "Poorly": 87,
-    "Neutral": 76,
+    "Neutral": 77,
     "Well": 8,
     "Very well": 2
   },
   "concernsTopLine": {
-    "Yes": 235,
+    "Yes": 236,
     "No": 23
   },
   "concernsBreakdown": {
-    "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 219,
-    "Impact on attention span and focus": 206,
+    "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 220,
+    "Impact on attention span and focus": 207,
     "Impact on social skills and peer interaction": 188,
     "Exposure to inappropriate content despite school filters": 180,
-    "Eye strain or physical health effects": 140,
+    "Eye strain or physical health effects": 141,
     "School devices undermining family screen time rules at home": 123,
     "Data privacy and security": 88
   },
@@ -104,29 +104,29 @@
     },
     "6-8": {
       "topLine": {
-        "Yes": 50,
+        "Yes": 51,
         "No": 6
       },
       "breakdown": {
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 48,
-        "Impact on attention span and focus": 45,
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 49,
+        "Impact on attention span and focus": 46,
         "Impact on social skills and peer interaction": 38,
         "Exposure to inappropriate content despite school filters": 37,
-        "Eye strain or physical health effects": 35,
+        "Eye strain or physical health effects": 36,
         "School devices undermining family screen time rules at home": 29,
         "Data privacy and security": 19
       }
     },
     "9-12": {
       "topLine": {
-        "Yes": 16,
+        "Yes": 17,
         "No": 2
       },
       "breakdown": {
-        "Impact on attention span and focus": 16,
-        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 16,
+        "Impact on attention span and focus": 17,
+        "Screens replacing hands-on learning, paper-and-pencil work, and handwriting": 17,
         "Impact on social skills and peer interaction": 14,
-        "Eye strain or physical health effects": 10,
+        "Eye strain or physical health effects": 11,
         "Exposure to inappropriate content despite school filters": 9,
         "School devices undermining family screen time rules at home": 8,
         "Data privacy and security": 7
@@ -134,16 +134,16 @@
     }
   },
   "policies": {
-    "Eliminate devices in K-2": 225,
+    "Eliminate devices in K-2": 226,
     "Prohibit YouTube in all grades K-12": 224,
-    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 214,
-    "Paper-and-pencil homework only for elementary school": 203,
+    "Prohibit recreational screen use during indoor recess or as a reward, incentive or behavioral reinforcement": 215,
+    "Paper-and-pencil homework only for elementary school": 204,
     "Require explicit opt-in for generative AI tools": 183,
-    "Parental access to student device activity": 178,
+    "Parental access to student device activity": 179,
     "Guarantee right to opt out of unproven EdTech and AI": 176,
-    "Reconsider the 1:1 device model and return to shared devices in 3-5": 155,
-    "Parental consent for each data-collecting app or website": 151,
-    "Reconsider the 1:1 device model and return to shared devices in 6-8": 106,
+    "Reconsider the 1:1 device model and return to shared devices in 3-5": 156,
+    "Parental consent for each data-collecting app or website": 152,
+    "Reconsider the 1:1 device model and return to shared devices in 6-8": 107,
     "Paper-and-pencil homework only for middle school": 100
   },
   "districts": [
